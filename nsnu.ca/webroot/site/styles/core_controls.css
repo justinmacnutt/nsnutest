@@ -1,0 +1,418 @@
+/*
+* 	Default settings for OW core control classes
+*/
+/* Global */
+/* line 14, ../sass/core_controls.scss */
+.ow_textPipe,
+.ow_pageDate,
+.ow_pageByline,
+.ow_pageAuthor,
+.ow_pageTags,
+.ow_pageCopyright {
+  font-size: 10px;
+}
+
+/* line 18, ../sass/core_controls.scss */
+.ow_pageDate {
+  text-transform: uppercase;
+}
+
+/* line 23, ../sass/core_controls.scss */
+.ow_pageTags,
+.ow_pageAuthor {
+  font-style: italic;
+}
+/* line 26, ../sass/core_controls.scss */
+.ow_pageTags:before,
+.ow_pageAuthor:before {
+  content: "By: ";
+}
+
+/* line 32, ../sass/core_controls.scss */
+.ow_pageEnclosure {
+  display: block;
+  margin: 0.25em;
+  padding: 0 0 0 20px;
+  font-family: monospace;
+  text-transform: uppercase;
+  line-height: 1;
+  background: transparent url(../images/icon-dl.png) 0 0 no-repeat;
+}
+/* line 41, ../sass/core_controls.scss */
+.ow_pageEnclosure:before {
+  content: "Download: ";
+}
+
+/* PageList.ascx control  */
+/* line 48, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem {
+  display: block;
+  margin: 0;
+  padding: 20px 0 5px;
+  border-bottom: 1px dotted #cccccc;
+}
+/* line 54, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem .ow_pageImage {
+  display: block;
+  float: left;
+  clear: left;
+  margin: 0 10px 12px 0;
+  width: 104px;
+}
+/* line 61, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem .ow_pageImage img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+/* line 68, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem .ow_pageInfo {
+  display: block;
+  margin: 20px 0 0 0;
+}
+/* line 77, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem h2.ow_pageHeading {
+  margin-bottom: 6px;
+}
+/* line 81, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem h2.ow_pageHeading a img {
+  border: none;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+/* line 89, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem p.ow_pageSummary {
+  margin: 0 0 1.375em 0;
+}
+/* line 93, ../sass/core_controls.scss */
+#ow_pageList .ow_pageItem .ow_pageByline {
+  display: block;
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 6px;
+  background-color: #f2f2f2;
+  font-style: italic;
+}
+
+/* line 108, ../sass/core_controls.scss */
+p#ow_pageSectionLink {
+  margin: 1.375em 0;
+  text-align: right;
+}
+
+/* pager styles */
+/* line 111, ../sass/core_controls.scss */
+.ow_pagerListWrapper {
+  margin: 1.375em auto;
+}
+
+/* line 114, ../sass/core_controls.scss */
+ul#ow_pagerList {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 120, ../sass/core_controls.scss */
+ul#ow_pagerList li {
+  margin: 0 0 0 8px;
+  padding: 0 0 0 4px;
+  font-size: 11px;
+  list-style: none;
+  display: inline;
+  float: left;
+  border: solid 0 #cccccc;
+  border-width: 0 0 0 0;
+  line-height: 1.65;
+}
+/* line 131, ../sass/core_controls.scss */
+ul#ow_pagerList li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 139, ../sass/core_controls.scss */
+ul#ow_pagerList li.ow_pagerFirst, ul#ow_pagerList li.ow_pagerPrevious, ul#ow_pagerList li.ow_pagerNext, ul#ow_pagerList li.ow_pagerLast {
+  color: #cccccc;
+  font-weight: 700;
+}
+/* line 144, ../sass/core_controls.scss */
+ul#ow_pagerList li.ow_pagerLinks a {
+  font-weight: 400;
+  text-decoration: none;
+}
+/* line 149, ../sass/core_controls.scss */
+ul#ow_pagerList li.ow_pagerLinks a,
+ul#ow_pagerList li.ow_pagerLinks strong {
+  padding: 4px 8px;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+}
+/* line 154, ../sass/core_controls.scss */
+ul#ow_pagerList li.ow_pagerLinks a:hover,
+ul#ow_pagerList li.ow_pagerLinks strong {
+  background-color: #f2f2f2;
+}
+/* line 159, ../sass/core_controls.scss */
+ul#ow_pagerList li.ow_selPageSize {
+  border-left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* End - Page list styles */
+/* PageItem.ascx styles */
+/* line 170, ../sass/core_controls.scss */
+div#ow_pageItem {
+  display: block;
+  margin: 0 0 1.375em;
+  padding: 0;
+  border-bottom: 1px dotted #cccccc;
+}
+/* line 176, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageImage {
+  display: block;
+  float: left;
+  clear: left;
+  margin: 0 10px 12px 0;
+  width: 104px;
+}
+/* line 183, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageImage img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+/* line 190, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageInfo {
+  display: block;
+}
+/* line 193, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageSummary {
+  display: block;
+  clear: both;
+  font-style: italic;
+  margin: 0 0 0.5em;
+}
+/* line 202, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageTags {
+  padding: 6px;
+  background-color: #f2f2f2;
+}
+/* line 206, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageTags:before {
+  content: "Tags: ";
+}
+/* line 210, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageTags ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 215, ../sass/core_controls.scss */
+div#ow_pageItem .ow_pageTags ul li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style-type: none;
+}
+
+/* End - Page item styles */
+/* Related pages styles */
+/* line 231, ../sass/core_controls.scss */
+.ow_pageRelated {
+  padding: 1.5em;
+  font-weight: 700;
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
+}
+/* line 237, ../sass/core_controls.scss */
+.ow_pageRelated:before {
+  content: "RELATED PAGES";
+}
+/* line 241, ../sass/core_controls.scss */
+.ow_pageRelated ul#ow_pageRelated {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 1.375em 1em;
+}
+/* line 246, ../sass/core_controls.scss */
+.ow_pageRelated ul#ow_pageRelated li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0 0 1.375em 1.5em;
+  padding: 0;
+  font-weight: 400;
+  color: #cccccc;
+}
+
+/* End - Related pages styles */
+/* Page Filter */
+/* line 263, ../sass/core_controls.scss */
+.ow_pageFilter {
+  margin: 0 0 1.375em;
+}
+/* line 266, ../sass/core_controls.scss */
+.ow_pageFilter label {
+  display: block;
+  font-weight: 700;
+}
+
+/* End - Page Filter */
+/* Metadata styles */
+/* line 275, ../sass/core_controls.scss */
+div.ow_metadata ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 280, ../sass/core_controls.scss */
+div.ow_metadata ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 285, ../sass/core_controls.scss */
+div.ow_metadata ul li a {
+  text-decoration: none;
+}
+/* line 297, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_tab_nav li {
+  float: left;
+  border: 1px solid #e5e5e5;
+  border-bottom-width: 0;
+  margin: 0 2px 0 0;
+  padding-top: -1px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1a1a1a), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#1a1a1a, #ffffff);
+  background-image: -moz-linear-gradient(#1a1a1a, #ffffff);
+  background-image: -o-linear-gradient(#1a1a1a, #ffffff);
+  background-image: linear-gradient(#1a1a1a, #ffffff);
+}
+/* line 306, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_tab_nav li a {
+  display: block;
+  padding: 5px 1.375em 4px;
+  text-align: center;
+}
+/* line 312, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_tab_nav li.active {
+  background: white;
+}
+/* line 315, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_tab_nav li.active a {
+  color: #333;
+  position: relative;
+  top: 1px;
+  padding: 4px 1.375em 5px;
+  background-color: white;
+  cursor: default;
+  text-decoration: none;
+}
+/* line 329, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list, div.ow_metadata.both ul.ow_cloud {
+  display: block;
+  padding: 0.5em;
+  border: 1px solid #f2f2f2;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  clear: both;
+}
+/* line 339, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+/* line 344, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list li {
+  display: block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 3px;
+  line-height: 1.1;
+}
+/* line 351, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list li:first-child {
+  border-top: 0;
+}
+/* line 355, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud {
+  display: block;
+  text-align: center;
+}
+/* line 359, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li {
+  display: inline;
+  margin: 0 3px;
+  line-height: 1.5;
+}
+/* line 364, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_1 {
+  font-size: 9px;
+}
+/* line 365, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_2 {
+  font-size: 10px;;
+}
+/* line 366, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_3 {
+  font-size: 11px;
+}
+/* line 367, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_4 {
+  font-size: 13px;
+}
+/* line 368, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_5 {
+  font-size: 15px;
+}
+/* line 369, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_6 {
+  font-size: 17px;
+}
+/* line 370, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li.ow_size_7 {
+  font-size: 19px;
+}
+/* line 372, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li .ow_count {
+  display: none;
+}
+/* line 375, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_cloud li a:hover {
+  color: white;
+  background-color: #0051ca;
+}
+/* line 386, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list li .ow_count, div.ow_metadata.both ul.ow_cloud li .ow_count {
+  font-size: 10px;
+}
+/* line 390, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list li a, div.ow_metadata.both ul.ow_cloud li a {
+  text-decoration: none;
+  border-bottom: 1px dotted #cccccc;
+}
+/* line 394, ../sass/core_controls.scss */
+div.ow_metadata.both ul.ow_list li a:hover, div.ow_metadata.both ul.ow_cloud li a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #0051ca;
+}
+
+/* End - Metadata styles */

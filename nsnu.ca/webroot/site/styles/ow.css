@@ -1,0 +1,492 @@
+/*
+* 	Default settings for OW ui classes
+*/
+/*******************************
+    Setup Site Variables
+********************************/
+/* line 63, ../sass/partials/_mixins.scss */
+.ow_formblock .ow_form .ow_formfld:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Logon control */
+/* line 8, ../sass/ow.scss */
+#ow_loginlink {
+  display: inline;
+}
+/* line 14, ../sass/ow.scss */
+#ow_loginlink .ow_btn {
+  display: none;
+}
+/* line 17, ../sass/ow.scss */
+#ow_loginlink .ow_img {
+  display: none;
+}
+
+/* line 58, ../sass/ow.scss */
+.ow_searchList {
+  /* search result highlight keys */
+}
+/* line 59, ../sass/ow.scss */
+.ow_searchList .ow_searchItem {
+  clear: both;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+/* line 68, ../sass/ow.scss */
+.ow_searchList .ow_searchImage {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin-right: 5px;
+}
+/* line 74, ../sass/ow.scss */
+.ow_searchList .ow_searchImage img {
+  height: auto;
+  max-width: 60px;
+  max-height: 120px;
+  border: none;
+}
+/* line 85, ../sass/ow.scss */
+.ow_searchList .searchLinkHeader {
+  line-height: 1;
+}
+/* line 90, ../sass/ow.scss */
+.ow_searchList .ow_sr_link {
+  word-wrap: break-word;
+  line-height: 1;
+}
+/* line 97, ../sass/ow.scss */
+.ow_searchList strong.ow_sr {
+  padding: 0 3px;
+  font-weight: 700;
+}
+/* line 101, ../sass/ow.scss */
+.ow_searchList strong.ow_sr1 {
+  background: yellow;
+}
+/* line 104, ../sass/ow.scss */
+.ow_searchList strong.ow_sr2 {
+  background: cyan;
+}
+/* line 107, ../sass/ow.scss */
+.ow_searchList strong.ow_sr3 {
+  background: magenta;
+}
+/* line 110, ../sass/ow.scss */
+.ow_searchList strong.ow_sr4 {
+  background: lime;
+}
+/* line 113, ../sass/ow.scss */
+.ow_searchList strong.ow_sr5 {
+  background: #ffcc00;
+}
+
+/* line 119, ../sass/ow.scss */
+#ow_searchPagerList {
+  margin: 1.375em auto;
+  font-size: 12px;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  /* line 119, ../sass/ow.scss */
+  #ow_searchPagerList {
+    line-height: 3;
+  }
+}
+/* line 128, ../sass/ow.scss */
+#ow_searchPagerList .ow_searchPage {
+  margin: 0 0 0 20px;
+}
+/* line 132, ../sass/ow.scss */
+#ow_searchPagerList .ow_searchNext,
+#ow_searchPagerList .ow_searchPrevious {
+  color: #cccccc;
+}
+/* line 137, ../sass/ow.scss */
+#ow_searchPagerList a,
+#ow_searchPagerList strong {
+  margin: 0 0 0 4px;
+  padding: 4px 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #e6e6e6;
+}
+/* line 143, ../sass/ow.scss */
+#ow_searchPagerList a {
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 148, ../sass/ow.scss */
+#ow_searchPagerList a:hover {
+  background-color: #cccccc;
+}
+
+/* Sitemap */
+/* line 158, ../sass/ow.scss */
+#ow_sitemapResults a:link, #ow_sitemapResults a:visited {
+  text-decoration: none;
+}
+/* line 162, ../sass/ow.scss */
+#ow_sitemapResults a:hover, #ow_sitemapResults a:active {
+  text-decoration: underline;
+}
+/* line 167, ../sass/ow.scss */
+#ow_sitemapResults ul {
+  list-style-type: none;
+  margin: 0;
+}
+/* line 171, ../sass/ow.scss */
+#ow_sitemapResults ul li {
+  background-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 177, ../sass/ow.scss */
+#ow_sitemapResults ul li ul {
+  margin: 0.25em 0 1em 1.25em;
+}
+/* line 179, ../sass/ow.scss */
+#ow_sitemapResults ul li ul li {
+  list-style-type: disc;
+}
+/* line 182, ../sass/ow.scss */
+#ow_sitemapResults ul li ul li ul li {
+  list-style-type: circle;
+}
+/* line 185, ../sass/ow.scss */
+#ow_sitemapResults ul li ul li ul li ul li {
+  list-style-type: square;
+}
+/* line 188, ../sass/ow.scss */
+#ow_sitemapResults ul li ul li ul li ul li ul li {
+  list-style-type: circle;
+}
+/* line 191, ../sass/ow.scss */
+#ow_sitemapResults ul li ul li ul li ul li ul li ul li {
+  list-style-type: square;
+}
+
+/* Custom forms styles */
+/* line 209, ../sass/ow.scss */
+.isl_req,
+span.required {
+  color: #ff3300;
+  font-size: 10px;
+  line-height: normal;
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+/* line 217, ../sass/ow.scss */
+#ow_errorHeading {
+  color: #c10000;
+}
+
+/* line 222, ../sass/ow.scss */
+.ow_app [type="image"] {
+  display: none;
+}
+/* line 227, ../sass/ow.scss */
+.ow_app [type="text"],
+.ow_app [type="password"] {
+  font-size: 12px;
+  padding: 0 6px;
+  height: 28px;
+  border: solid 1px #b3b3b3;
+  background-color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 236, ../sass/ow.scss */
+.ow_app [type="submit"] {
+  color: #4d4d4d;
+  margin: 10px 0;
+  padding: 6px 12px;
+  border: 0;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0px 1px 1px white;
+  -webkit-box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  @incude transition(0.2s background ease);
+}
+/* line 248, ../sass/ow.scss */
+.ow_app [type="submit"]:hover {
+  background-color: #cccccc;
+  text-decoration: none;
+}
+/* line 252, ../sass/ow.scss */
+.ow_app [type="submit"]:active {
+  color: white;
+  background-color: #4d4d4d;
+  text-decoration: none;
+}
+/* line 259, ../sass/ow.scss */
+.ow_app [type="radio"],
+.ow_app [type="checkbox"] {
+  line-height: 1.6;
+  margin: 0 6px 15px 10px;
+}
+/* line 264, ../sass/ow.scss */
+.ow_app label span.help {
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+/* line 273, ../sass/ow.scss */
+#ow_app_help,
+.ow_form .ow_form_helpwindow {
+  position: absolute;
+  display: none;
+  border: 1px solid #999999;
+  padding: 0;
+  z-index: 500;
+  height: auto;
+  width: 250px;
+  background-color: white;
+}
+/* line 283, ../sass/ow.scss */
+#ow_app_help #ow_form_helpwindow_inner,
+.ow_form .ow_form_helpwindow #ow_form_helpwindow_inner {
+  margin: 2px 2px 2px 17px;
+  background-color: #f2f2f2;
+  color: #333333;
+  padding: 6px;
+}
+
+/* line 291, ../sass/ow.scss */
+#ow_app_help_close,
+.ow_form #ow_form_help_close {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  border: 1px solid black;
+}
+/* line 302, ../sass/ow.scss */
+#ow_app_help_close a:link, #ow_app_help_close a:visited, #ow_app_help_close a:hover, #ow_app_help_close a:active,
+.ow_form #ow_form_help_close a:link,
+.ow_form #ow_form_help_close a:visited,
+.ow_form #ow_form_help_close a:hover,
+.ow_form #ow_form_help_close a:active {
+  display: block;
+  width: 10px;
+  height: 10px;
+  font-weight: 700;
+  font-size: 10px;
+  overflow: hidden;
+  color: white !important;
+  background: #666666;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none !important;
+  -webkit-transition: background 300ms ease;
+  -webkit-transition-delay: 0;
+  -moz-transition: background 300ms ease 0;
+  -o-transition: background 300ms ease 0;
+  transition: background 300ms ease 0;
+}
+/* line 317, ../sass/ow.scss */
+#ow_app_help_close a:hover, #ow_app_help_close a:active,
+.ow_form #ow_form_help_close a:hover,
+.ow_form #ow_form_help_close a:active {
+  background: #333333;
+}
+
+/* line 323, ../sass/ow.scss */
+.ow_formblock {
+  margin: 20px 0;
+}
+/* line 326, ../sass/ow.scss */
+.ow_formblock .ow_formtitle {
+  font-weight: 700;
+}
+/* line 330, ../sass/ow.scss */
+.ow_formblock .ow_forminstructions {
+  margin: 1.375em 0;
+  font-size: 10px;
+}
+/* line 336, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld {
+  position: relative;
+  zoom: 1;
+  margin-bottom: 1.375em;
+  width: auto;
+}
+/* line 343, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.invalid {
+  background-color: #fae6e7;
+  margin-bottom: 1px;
+  padding: 3px;
+}
+/* line 349, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld label {
+  font-weight: 700;
+}
+/* line 355, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.checkbox label, .ow_formblock .ow_form .ow_formfld.checkboxlist td label, .ow_formblock .ow_form .ow_formfld.radiobuttonlist td label {
+  font-weight: 400;
+}
+/* line 374, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.textbox input, .ow_formblock .ow_form .ow_formfld.email input, .ow_formblock .ow_form .ow_formfld.webaddress input, .ow_formblock .ow_form .ow_formfld.phone input, .ow_formblock .ow_form .ow_formfld.float input, .ow_formblock .ow_form .ow_formfld.money input, .ow_formblock .ow_form .ow_formfld.captcha input, .ow_formblock .ow_form .ow_formfld.datepicker input, .ow_formblock .ow_form .ow_formfld.timepicker input, .ow_formblock .ow_form .ow_formfld.datetimepicker input, .ow_formblock .ow_form .ow_formfld.numerictextbox input, .ow_formblock .ow_form .ow_formfld.multilinetextbox textarea {
+  padding: 4px 8px;
+  font-size: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  border: 1px #999999 solid;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+}
+/* line 383, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.listbox select, .ow_formblock .ow_form .ow_formfld.dropdownlist select {
+  font-size: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  padding: 4px 8px;
+}
+/* line 390, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.checkboxlist table, .ow_formblock .ow_form .ow_formfld.radiobuttonlist table {
+  margin: 3px 0 0 0;
+  border-collapse: collapse;
+}
+/* line 394, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.checkboxlist table td, .ow_formblock .ow_form .ow_formfld.radiobuttonlist table td {
+  padding: 0;
+  line-height: 1.7 !important;
+}
+/* line 402, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.checkbox input, .ow_formblock .ow_form .ow_formfld.checkboxlist td input, .ow_formblock .ow_form .ow_formfld.radiobuttonlist td input {
+  margin: 0 8px 0px 0 !important;
+  padding: 0 !important;
+  width: 13px;
+  /* for IE7 */
+  height: 13px;
+  /* for IE7 */
+}
+/* line 411, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.captcha a.rcRefreshImage {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+/* line 415, ../sass/ow.scss */
+.ow_formblock .ow_form .ow_formfld.captcha p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 423, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_formfld_tip {
+  color: #666666;
+  margin: 0 !important;
+  font-size: 10px;
+}
+/* line 429, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_submit {
+  margin: 1.375em 0 2.5em 0;
+}
+/* line 432, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_submit .ow_submitbtn {
+  color: #525252;
+  margin: 10px 0;
+  padding: 6px 12px;
+  border: 0;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  text-shadow: 0px 1px 1px white;
+  -webkit-box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.75);
+  -webkit-transition: 0.2s background ease;
+  -moz-transition: 0.2s background ease;
+  -o-transition: 0.2s background ease;
+  transition: 0.2s background ease;
+}
+/* line 444, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_submit .ow_submitbtn:hover {
+  background-color: #cccccc;
+  text-decoration: none;
+}
+/* line 448, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_submit .ow_submitbtn:active {
+  color: white;
+  background-color: #4d4d4d;
+  text-decoration: none;
+}
+/* line 454, ../sass/ow.scss */
+.ow_formblock .ow_form p.ow_submit .ow_submitimg {
+  display: none;
+}
+/* line 460, ../sass/ow.scss */
+.ow_formblock .ow_form span.help {
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+/* line 471, ../sass/ow.scss */
+table.ow_formfld_tbl td {
+  vertical-align: top;
+  padding-bottom: 7px;
+}
+/* line 475, ../sass/ow.scss */
+table.ow_formfld_tbl td label {
+  font-weight: 700;
+  margin-right: 10px;
+  color: #4d4d4d;
+}
+/* line 482, ../sass/ow.scss */
+table.ow_formfld_tbl td.ow_form_col2 label {
+  font-weight: 400;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+
+/* line 494, ../sass/ow.scss */
+tbody.ow_formfld.hidden td {
+  padding: 0;
+}
+/* line 497, ../sass/ow.scss */
+tbody.ow_formfld .ow_formfld_contents {
+  margin-bottom: 5px;
+}
+/* line 501, ../sass/ow.scss */
+tbody.ow_formfld p.ow_formfld_tip {
+  color: #999999;
+  margin: 0 !important;
+  font-size: 10px;
+}
+/* line 507, ../sass/ow.scss */
+tbody.ow_formfld span.help {
+  color: #999999;
+  font-weight: 400;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* End - Custom form styles */
+/* OW admin custom helpers */

@@ -1,0 +1,34 @@
+.lt-ie9{
+	body.home{
+		.header_image{
+			background: #fff url(../images/bg_site_home-gradient.jpg) no-repeat center 50px;
+		}
+		#content{
+			>.inner{
+				.login{
+					background-color: #ecebe9;
+				}
+			}
+		}
+	}
+	.taskbar{
+		.searcharea{
+			.ow_sbox{
+				padding-top: 10px;
+				height: 23px;
+			}
+		}
+	}
+	#header_main{
+		>.inner{
+			#nav_main{
+				ul{
+					li{
+						display: block;
+						float: left;
+					}
+				}
+			}
+		}
+	}
+}

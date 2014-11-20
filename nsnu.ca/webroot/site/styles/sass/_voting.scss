@@ -1,0 +1,29 @@
+.announcement{
+	aside{
+		font-size: 18px;
+		div.mod_vote_lure_title{
+			margin-bottom: 15px;
+		}
+		div.mod_vote_lure_date{
+			font-size: 12px;
+			text-align: right;
+		}
+		a {
+			display: block;
+			float: left;
+			width: 100%;
+			text-align: left;
+			font-size: 26px;
+			margin-bottom: 10px;
+		}
+	}
+}
+p.mod_voting_input{ 
+	margin: 0;
+	padding: 0;
+	line-height: auto;
+}
+
+p.mod_voting_responded{
+	font-style: italic;
+}

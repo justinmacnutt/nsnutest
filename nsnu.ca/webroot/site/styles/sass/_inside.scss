@@ -1,0 +1,162 @@
+body{
+	.inside{
+		position: relative;
+		background: #f6f6f6 url(../images/bg_site_inside.jpg) no-repeat center 50px;
+		background-size: 100%;
+		&.memberservices, &.mediaroom, &.events{
+			background-image: url(../images/background1.jpg);
+		}
+		&.collectiveagreements, &.aboutyourunion{
+			background-image: url(../images/background2.jpg);
+		}
+		&.education,&.advocacy, &.wide{
+			background-image: url(../images/background3.jpg);
+		}
+		&.mynsnu{
+			background-image: url(../images/background4.jpg);
+		}
+		&.nursing-led-by-nurses {
+			background-image: url(../images/background5.jpg);
+		}
+
+
+		h2{
+			color: #242424;
+			font-size: em(26px);
+			font-weight: normal;
+		}
+		h3{
+			color: #005575;
+			font-size: em(18px);
+			font-weight: bold;
+		}
+		p,li,td{
+			line-height: 2em;
+
+		}
+		#breadcrumbs{
+			width: $innerWidth;
+			margin: 10px auto;
+			.inner{
+				margin-left: $innerWidth - 749px;
+				color: #2d2d2d;
+				font-size: em(12px);
+				a,.sitepath_current{
+					color: #FFF;
+					margin: 0 8px;
+				}
+				
+			}
+		}
+		#content{
+			>.inner{
+				background: #ffffff;
+				>h1{
+					margin: 30px 15px 10px 30px;
+					font-size: em(34px);
+					color: #024862;
+					font-weight: bold;
+				}
+				.addthis_line{
+					.addthis_toolbox{
+						float: right;
+                        width:126px;
+					}
+					.addthis_button_print{
+						float: right;
+						margin-right: 15px;
+						font-size: em(12px);
+					}
+                    //height: 22px;
+                    margin-bottom:12px;
+				}
+				.col1{
+					width: 32%;
+					.inner{
+						margin-left: 15px;
+						.nav_sub{
+							ul{
+								padding: 0;
+								margin: 0;
+								li{
+									display: block;
+									padding: 0;
+									margin: 0;
+									border-bottom: solid 1px #cbc8c0;
+									list-style-type: none;
+									&:first-child{
+										border-top: solid 1px #cbc8c0;
+									}
+									a{
+										display: block;
+										padding: 6px 20px;
+										color: #035574;
+										&.current{
+											background: #e4e1dd;
+										}
+										&:visited{
+											color: #035574;
+										} 
+									}
+									ul{
+										li{
+											font-size: em(14px);
+											&:last-child{
+												border-bottom: none;
+											}
+											a{
+												padding: 6px 20px 6px 40px;
+											}
+										}
+									}
+								}
+							}
+						}
+						h1{
+							color: #024862;
+							font-size: em(22px);
+
+						}
+					}
+				}
+				.col2,.wide{
+					width: 65%;
+					margin-left: 2.9%;
+					float: right;
+					.inner{
+						margin-right: 10px;
+						.bottom{
+							background-color: #f2f0ed;
+							color: #121212;
+							padding: 20px;
+							margin-bottom: 25px;
+							h1{
+								font-size: em(18px);
+								font-weight: normal;
+							}
+						}
+					}
+				}
+				.wide{ 
+					width: 94.2%;
+					float: none;
+				}
+			}
+			
+		}
+		#footer_main{
+			>.inner{
+				.col1,.col2{
+					width: 48%;
+				}
+				.col2{
+					margin-left: 2%;
+					img{
+						display: block;
+						margin: 5px auto;
+					}
+				}
+			}
+		}
+	}
+}
