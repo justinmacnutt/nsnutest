@@ -44,6 +44,9 @@
         <div class="slide3 slide">
             <OW:ContentBlock Position="home_slide3" Display="Block" CssClass="ow_block" runat="server" />
         </div>
+        <div class="slide4 slide">
+            <OW:ContentBlock Position="home_slide4" Display="Block" CssClass="ow_block" runat="server" />
+        </div>
     </div>
     <div class="slide_nav">
         <ul>
@@ -57,6 +60,10 @@
             </li>
             <li id="nav_slide3">
                 <OW:ContentBlock Position="home_slidenav3" Display="Block" CssClass="ow_block" runat="server" />
+                <span class="icon"></span>
+            </li>
+            <li id="nav_slide4">
+                <OW:ContentBlock Position="home_slidenav4" Display="Block" CssClass="ow_block" runat="server" />
                 <span class="icon"></span>
             </li>
         </ul>
