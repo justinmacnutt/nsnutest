@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B185021-B1F8-4EAB-8EED-F58AE1E8023F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>webroot</RootNamespace>
+    <AssemblyName>OneWeb CMS 6 Site Project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="site\applications\EventCalendar\appicon.png" />
+    <Content Include="site\applications\EventCalendar\Application.previews.css" />
+    <Content Include="site\applications\EventCalendar\Application.previews.js" />
+    <Content Include="site\applications\EventCalendar\blank.gif" />
+    <Content Include="site\applications\EventCalendar\calendar.html" />
+    <Content Include="site\applications\EventCalendar\calendar.js" />
+    <Content Include="site\applications\EventCalendar\calendar.png" />
+    <Content Include="site\applications\EventCalendar\clock.png" />
+    <Content Include="site\applications\EventCalendar\ec_AddEvent.js" />
+    <Content Include="site\applications\EventCalendar\ec_Application.js" />
+    <Content Include="site\applications\EventCalendar\en\AddEvent.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Application.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Calendar.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Controls\DetailsPager.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Details.ascx" />
+    <Content Include="site\applications\EventCalendar\en\EmailEventAdmin.xml" />
+    <Content Include="site\applications\EventCalendar\en\List.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Lure.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Pager.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Previews\Application.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Results.ascx" />
+    <Content Include="site\applications\EventCalendar\en\Search.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\AddEvent.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Application.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Calendar.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Controls\DetailsPager.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Details.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\EmailEventAdmin.xml" />
+    <Content Include="site\applications\EventCalendar\fr\List.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Lure.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Pager.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Previews\Application.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Results.ascx" />
+    <Content Include="site\applications\EventCalendar\fr\Search.ascx" />
+    <Content Include="site\applications\EventCalendar\icon_calendar.gif" />
+    <Content Include="site\applications\EventCalendar\mod_ec.css" />
+    <Content Include="site\applications\EventCalendar\UI.App.RSSLink.js" />
+    <Content Include="site\controls\en\MemberLogoffLink.ascx" />
+    <Content Include="site\controls\en\MemberLogon.ascx" />
+    <Content Include="site\controls\en\MemberLogonLink.ascx" />
+    <Content Include="site\controls\en\MemberProfile.ascx" />
+    <Content Include="site\controls\en\MemberStatus.ascx" />
+    <Content Include="site\controls\en\SearchBox.ascx" />
+    <Content Include="site\controls\LoadCss.ascx" />
+    <Content Include="site\controls\LoadJS.ascx" />
+    <Content Include="site\images\background4.jpg" />
+    <Content Include="site\images\background1.jpg" />
+    <Content Include="site\images\background2.jpg" />
+    <Content Include="site\images\background3.jpg" />
+    <Content Include="site\images\background5.jpg" />
+    <Content Include="site\images\bg_site_home-gradient.jpg" />
+    <Content Include="site\images\bg_site_home.jpg" />
+    <Content Include="site\images\bg_site_home_mobile.jpg" />
+    <Content Include="site\images\bg_site_inside.jpg" />
+    <Content Include="site\images\icon_emaillink.gif" />
+    <Content Include="site\images\icon_externallink.gif" />
+    <Content Include="site\images\icon_pdflink.gif" />
+    <Content Include="site\images\interface-s6ba243decf.png" />
+    <Content Include="site\images\interface\hero-arrow.png" />
+    <Content Include="site\images\interface\icon_arrow_down_blue.png" />
+    <Content Include="site\images\interface\icon_arrow_down_white.png" />
+    <Content Include="site\images\interface\icon_arrow_up_white.png" />
+    <Content Include="site\images\interface\icon_magnify.png" />
+    <Content Include="site\images\interface\login-close.png" />
+    <Content Include="site\images\interface\login-open.png" />
+    <Content Include="site\images\interface\menu-close.png" />
+    <Content Include="site\images\interface\menu-open.png" />
+    <Content Include="site\images\logo_cfnu.gif" />
+    <Content Include="site\images\logo_clc.gif" />
+    <Content Include="site\images\logo_cna.gif" />
+    <Content Include="site\images\logo_nsnu.png" />
+    <Content Include="site\images\logo_nsnu_print.png" />
+    <Content Include="site\images\logo_nsnu_red.png" />
+    <Content Include="site\scripts\jquery.init.js" />
+    <Content Include="site\scripts\libs\jquery-1.7.1.js" />
+    <Content Include="site\scripts\libs\jquery-1.7.1.min.js" />
+    <Content Include="site\scripts\libs\modernizr-2.5.3.min.js" />
+    <Content Include="site\scripts\plugins.js" />
+    <Content Include="site\styles\common.css" />
+    <Content Include="site\styles\core_controls.css" />
+    <Content Include="site\styles\ie.css" />
+    <Content Include="site\styles\mod_ec.css" />
+    <Content Include="site\styles\ow.css" />
+    <Content Include="site\styles\ow_custom.css" />
+    <Content Include="site\styles\sass\common.css">
+      <DependentUpon>common.scss</DependentUpon>
+    </Content>
+    <None Include="site\styles\sass\mod_ec.scss" />
+    <Content Include="site\styles\sass\mod_ec.css">
+      <DependentUpon>mod_ec.scss</DependentUpon>
+    </Content>
+    <Content Include="site\templates\Breadcrumbs.xslt" />
+    <Content Include="site\templates\BannerClass.xslt" />
+    <Content Include="site\templates\en\inside_wide_nurses.ascx" />
+    <Content Include="site\templates\en\mynsnu_wide.ascx" />
+    <Content Include="site\templates\en\inside_wide.ascx" />
+    <Content Include="site\templates\en\mynsnu.ascx" />
+    <Content Include="site\templates\en\home.ascx" />
+    <Content Include="site\templates\en\home_pr.ascx" />
+    <Content Include="site\templates\en\print.ascx" />
+    <Content Include="site\templates\en\inside.ascx" />
+    <Content Include="site\templates\MainMenu.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.rb" />
+    <Content Include="site\applications\EventCalendar\EventSyndicationHandler.ashx" />
+    <Content Include="site\applications\EventCalendar\RSS2.ashx" />
+    <Content Include="site\applications\EventCalendar\Syndication.ashx" />
+    <None Include="site\styles\sass\common.scss" />
+    <None Include="site\styles\sass\_voting.scss" />
+    <None Include="site\styles\sass\_home.scss" />
+    <None Include="site\styles\sass\_inside.scss" />
+    <None Include="site\styles\sass\_layout.scss" />
+    <None Include="site\styles\sass\_lt1024.scss" />
+    <None Include="site\styles\sass\_lt1024gt768.scss" />
+    <None Include="site\styles\sass\_lt768.scss" />
+    <None Include="site\styles\sass\_ltie9.scss" />
+    <None Include="site\styles\sass\_mynsnu.scss" />
+    <None Include="site\styles\sass\_setup.scss" />
+    <Content Include="site\templates\MainMenuMultiTier.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="site\templates\SecondaryMenu.xslt" />
+    <Content Include="site\templates\SecondaryMenuMyNSNU.xslt" />
+    <None Include="web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51286</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,223 @@
+body{
+	.home{
+        h1.loginToggle{display:block;}
+		.header_image{
+			position: absolute;
+			top: 120px;
+			background: transparent url(../images/bg_site_home_mobile.jpg) no-repeat top center;
+			background-size: cover;
+			height: 150px;
+			width: 100%;
+			left: 0;
+			margin: 0;
+		}
+		#header_main{
+			height: 70px + 150px + 125px;
+			.slider{
+				background: #FFF;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				height: 125px;
+				.slides{
+					width: 100%;
+					height: 125px;
+					margin: 0;
+					
+					.slide{
+						width: 90%;
+						margin: 10px 5%;
+						h2{ 
+							font-size: em(18px);
+						}
+						h3{
+							font-size: em(20px);
+						}
+					}
+				}
+				.slide_nav{
+					bottom: 20px;
+					left: 50%;
+					margin-left: -20px;
+					ul{ 
+						li{ 
+							width: 10px;
+							height: 10px;
+							margin: 0 2px;
+							text-indent: -999em;
+							border: solid 1px #b4b4b4;
+							background: #FFF;
+							@include border-radius(5px);
+							
+							&.active{ 
+								border: solid 1px #012b3a;
+								background: #012b3a;
+								.icon{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#content{
+			min-height:400px;
+			background: #FFF;
+			width: 100%;
+			>.inner{
+				.col1,.col3{
+					display: block;
+					width: 90%;
+					margin: 0 0 0 5%;
+					float: none;
+					.inner{
+						width: 100%;
+						margin: 0;
+					}
+				}
+				.col1{
+					margin-top: 100px;
+					&.login-active{
+						margin-top: 385px;
+					}
+				}
+				.login{
+					position: absolute;
+					top: 0px;
+                    left:0;
+					margin: 0 0 0 0;
+					width: 100%;
+					height: 60px;
+					padding: 15px 0 0 0;
+					#ow_login{
+						width: 100%;
+						background: #f3dcdc;
+						margin: 0;
+						h1{
+							width: auto;
+							padding: 15px 38px;
+							color: #FFF;
+							font-size: em(16px);
+							font-weight: normal;
+							margin-top: 0;
+							margin-bottom: 0;
+							position: relative;
+							@include background-image(linear-gradient(#e02a33, #a60101)); 
+							.icon{
+								display: block;
+								position: absolute;
+								right: 40px;
+								top: 15px;
+								width: 14px;
+								height: 14px;
+							}
+						}
+						.form{
+							display: none;
+							width: 90%;
+							margin: 0 0 0 5%;
+						}
+					}
+					&.active{
+						height: auto;
+						padding-bottom: 15px;
+						#ow_login{
+							padding-bottom: 20px;
+							h1{
+								margin-bottom: 1em;
+								.icon{
+									background-position: 0 -478px;
+								}
+							}
+							.form{
+								display: block;
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+.taskbar{
+	.searcharea{
+		display: none !important;
+	}
+	
+}
+.searcharea.mobile{
+	display: block;
+	margin: 1em auto;
+
+}
+
+.inside.mynsnu #content>.inner>h1{
+	margin: 0.5em;
+}
+body{
+	.home{
+		#footer_main{
+			>.inner{
+				.top{
+					.nav{
+						width: 100%;
+						float: none;
+						margin: 0;
+						ul{
+							li{
+								text-align: center;
+								line-height: 2em;
+							}
+						}
+					}
+					.twitter{
+						display: none;
+					}
+				}
+				.bottom{
+					img{
+						display: block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+body{
+	.inside{
+		background: none !important;
+		#content{
+			>.inner{
+				h1{
+					font-size: em(24px);
+				}
+				.col2{
+					.inner{
+						.bottom{
+							padding: 3%;
+						}
+					}
+				}
+			}
+		}
+		#footer_main{
+			>.inner{
+				width: 100%;
+				.col1{
+					width: 100%;
+					margin: 0;
+					text-align: center;
+					ul{
+						margin-top: 0;
+					}
+				}
+			}
+		
+		}
+	}
+}
+
+#footer_main .nav ul.nav li a {padding:12px 0;}
+body #footer_main .copyright{text-align:center;}

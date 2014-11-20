@@ -1,0 +1,1 @@
+<%@ WebHandler Language="vb" Codebehind="Syndication.ashx.vb" Class="ISL.OneWeb4.Modules.EventCalendar.UI.App.Syndication" %>

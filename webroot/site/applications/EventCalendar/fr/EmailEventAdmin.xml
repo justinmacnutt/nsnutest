@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<email>
+	<subject>OneWeb Event Calendar: new event submission</subject>
+	<body>
+    <html>
+		  <![CDATA[
+		<p>Dear Administrator,</p>
+      <p>The OneWeb Event Calendar has received a new event submission for you to review.</p>
+	  <p>Please click on the link below (or cut and paste it into your browser's address field) to review and publish the event.</p>
+      <p>{0}</p>
+	  <p>Thank you.<p>
+    ]]>
+	  </html>
+  </body>
+</email>
