@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="defaults" xml:space="preserve">
+    <value>Defaults</value>
+  </data>
+  <data name="site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="sortDesc" xml:space="preserve">
+    <value>Click to sort in descending order.</value>
+  </data>
+  <data name="sortAsc" xml:space="preserve">
+    <value>Click to sort in ascending order.</value>
+  </data>
+  <data name="any" xml:space="preserve">
+    <value>- ANY -</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="listSelect" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="neutral" xml:space="preserve">
+    <value>- not specific -</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="introVotes" xml:space="preserve">
+    <value>List of votes in the application.</value>
+  </data>
+  <data name="addVoteIntro" xml:space="preserve">
+    <value>Add a vote to the vote application database.</value>
+  </data>
+  <data name="addVoteSuccess" xml:space="preserve">
+    <value>Vote '&lt;strong&gt;{0}&lt;/strong&gt;' was successfully added to the site.</value>
+  </data>
+  <data name="addVoteCancelled" xml:space="preserve">
+    <value>Addition of vote to the site was cancelled.</value>
+  </data>
+  <data name="addVoteFailure" xml:space="preserve">
+    <value>Addition of a new vote to the site failed.</value>
+  </data>
+  <data name="voteName" xml:space="preserve">
+    <value>Vote title</value>
+  </data>
+  <data name="voteNameToolTip" xml:space="preserve">
+    <value>Specify a title for the vote. This is a required field.</value>
+  </data>
+  <data name="voteNameRequired" xml:space="preserve">
+    <value>Vote title is a required field.</value>
+  </data>
+  <data name="voteNameInvalid" xml:space="preserve">
+    <value>Vote title is already used on the current site. Vote names must be unique.</value>
+  </data>
+  <data name="culture" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="cultureToolTip" xml:space="preserve">
+    <value>Specify the language this vote is available in.  If it is available in any language, use - non-specific -.</value>
+  </data>
+  <data name="hidden" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+  <data name="hiddenToolTip" xml:space="preserve">
+    <value>Specify if this vote should not be visible to the public at this time.</value>
+  </data>
+  <data name="cultureRequired" xml:space="preserve">
+    <value>Language is a required field.</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="deleteVoteIntro" xml:space="preserve">
+    <value>Are you sure you want to delete the vote '&lt;strong&gt;{0}&lt;/strong&gt;' from the system?</value>
+  </data>
+  <data name="deleteVoteInvalid" xml:space="preserve">
+    <value>The vote '&lt;strong&gt;{0}&lt;/strong&gt;' does not exist.</value>
+  </data>
+  <data name="deleteVoteSuccess" xml:space="preserve">
+    <value>The vote '&lt;strong&gt;{0}&lt;/strong&gt;' was successfully deleted.</value>
+  </data>
+  <data name="deleteVoteCancelled" xml:space="preserve">
+    <value>Deletion of vote '&lt;strong&gt;{0}&lt;/strong&gt;' was cancelled.</value>
+  </data>
+  <data name="deleteVoteFailure" xml:space="preserve">
+    <value>Deletion of vote '&lt;strong&gt;{0}&lt;/strong&gt;' failed.</value>
+  </data>
+  <data name="voteIdInvalid" xml:space="preserve">
+    <value>A valid vote id was not provided.</value>
+  </data>
+  <data name="editVoteIntro" xml:space="preserve">
+    <value>Modifying vote '&lt;strong&gt;{0}&lt;/strong&gt;'.</value>
+  </data>
+  <data name="editVoteSuccess" xml:space="preserve">
+    <value>Vote '&lt;strong&gt;{0}&lt;/strong&gt;' was successfully updated.</value>
+  </data>
+  <data name="editVoteCancelled" xml:space="preserve">
+    <value>Update of vote '&lt;strong&gt;{0}&lt;/strong&gt;' was cancelled.</value>
+  </data>
+  <data name="editVoteFailure" xml:space="preserve">
+    <value>Update of vote '&lt;strong&gt;{0}&lt;/strong&gt;' failed.</value>
+  </data>
+  <data name="editVoteInvalid" xml:space="preserve">
+    <value>The vote '&lt;strong&gt;{0}&lt;/strong&gt;' does not exist.</value>
+  </data>
+  <data name="viewVoteIntro" xml:space="preserve">
+    <value>Viewing vote '&lt;strong&gt;{0}&lt;/strong&gt;'.</value>
+  </data>
+  <data name="viewVoteInvalid" xml:space="preserve">
+    <value>The vote '&lt;strong&gt;{0}&lt;/strong&gt;' does not exist.</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="voteCount" xml:space="preserve">
+    <value>Votes</value>
+  </data>
+  <data name="thisSite" xml:space="preserve">
+    <value>This site only</value>
+  </data>
+  <data name="startDate" xml:space="preserve">
+    <value>Display date/time</value>
+  </data>
+  <data name="startDateToolTip" xml:space="preserve">
+    <value>Specify the date/time on which the vote begins.  This is a required field.</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>Expiry date</value>
+  </data>
+  <data name="endDateToolTip" xml:space="preserve">
+    <value>Specify the date when the vote ends. Leave this field blank for one day votes.</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="locationToolTip" xml:space="preserve">
+    <value>Specify the location of the vote. </value>
+  </data>
+  <data name="startDateRequired" xml:space="preserve">
+    <value>Display date/time is a required field.</value>
+  </data>
+  <data name="locationRequired" xml:space="preserve">
+    <value>Location is a required field.</value>
+  </data>
+  <data name="emailFormat" xml:space="preserve">
+    <value>(john@mywebsite.com)</value>
+  </data>
+  <data name="endDateInvalid" xml:space="preserve">
+    <value>Expiry date must be a valid date equal to or later than the Display date.</value>
+  </data>
+  <data name="createdDate" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="published" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="na" xml:space="preserve">
+    <value>n/a</value>
+  </data>
+  <data name="publishedToolTip" xml:space="preserve">
+    <value>Specify if this vote should be visible to the public at this time.</value>
+  </data>
+  <data name="startDateFormatInvalid" xml:space="preserve">
+    <value>Please verify the Display date/time is in the correct format.</value>
+  </data>
+  <data name="endDateFormatInvalid" xml:space="preserve">
+    <value>Please verify the Expiry Date format is in the correct format.</value>
+  </data>
+  <data name="dateFormat" xml:space="preserve">
+    <value>(DD-MMM-YYYY)</value>
+  </data>
+  <data name="voteNameLength" xml:space="preserve">
+    <value>(max. 500 characters)</value>
+  </data>
+  <data name="addVote" xml:space="preserve">
+    <value>Add a vote</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Language specific field</value>
+  </data>
+  <data name="editVote" xml:space="preserve">
+    <value>Modify vote</value>
+  </data>
+  <data name="additionalDetails" xml:space="preserve">
+    <value>Additional details</value>
+  </data>
+  <data name="errorSummaryMessage" xml:space="preserve">
+    <value>There were problems with the following field(s):</value>
+  </data>
+  <data name="startDateAndTime" xml:space="preserve">
+    <value>Display date/time</value>
+  </data>
+  <data name="startDateAndTimeRequired" xml:space="preserve">
+    <value>Display date/time is a required field.</value>
+  </data>
+  <data name="startDateAndTimeToolTip" xml:space="preserve">
+    <value>Specify the date/time when the vote begins.  This is a required field.</value>
+  </data>
+  <data name="expiryDateAndTime" xml:space="preserve">
+    <value>Expiry date/time (inclusive)</value>
+  </data>
+  <data name="endDateAndTimeToolTip" xml:space="preserve">
+    <value>Specify the date when the vote ends. Leave this field blank for one day votes.</value>
+  </data>
+  <data name="timeZone" xml:space="preserve">
+    <value>Vote time zone</value>
+  </data>
+  <data name="timeZoneToolTip" xml:space="preserve">
+    <value>Specify the time zone for this vote.</value>
+  </data>
+  <data name="addVoteTitle" xml:space="preserve">
+    <value>Add Vote</value>
+  </data>
+  <data name="deleteVoteTitle" xml:space="preserve">
+    <value>Delete Vote</value>
+  </data>
+  <data name="manageVotes" xml:space="preserve">
+    <value>Manage Votes</value>
+  </data>
+  <data name="viewVoteTitle" xml:space="preserve">
+    <value>View Vote</value>
+  </data>
+  <data name="return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="statusToolTip" xml:space="preserve">
+    <value>Indicates whether the vote was ....</value>
+  </data>
+  <data name="dates" xml:space="preserve">
+    <value>Vote date(s)</value>
+  </data>
+  <data name="noVotes" xml:space="preserve">
+    <value>Sorry, no votes could be found.</value>
+  </data>
+  <data name="displayDate" xml:space="preserve">
+    <value>Display Date</value>
+  </data>
+  <data name="expiryDate" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="luretext" xml:space="preserve">
+    <value>Lure text</value>
+  </data>
+  <data name="answer1" xml:space="preserve">
+    <value>Answer 1 text</value>
+  </data>
+  <data name="answer1Required" xml:space="preserve">
+    <value>Answer 1 text is a required field.</value>
+  </data>
+  <data name="answer2" xml:space="preserve">
+    <value>Answer 2 text</value>
+  </data>
+  <data name="answer2Required" xml:space="preserve">
+    <value>Answer 2 text is a required field.</value>
+  </data>
+  <data name="endTime" xml:space="preserve">
+    <value>Expiry Time</value>
+  </data>
+  <data name="startTime" xml:space="preserve">
+    <value>Display Time</value>
+  </data>
+  <data name="questionLength" xml:space="preserve">
+    <value>(4000 characters left)</value>
+  </data>
+  <data name="questionLengthInvalid" xml:space="preserve">
+    <value>The summary cannot exceed 4000 characters.</value>
+  </data>
+  <data name="questionRequired" xml:space="preserve">
+    <value>Question  is a required field.</value>
+  </data>
+  <data name="luretextRequired" xml:space="preserve">
+    <value>Lure text is a required field.</value>
+  </data>
+  <data name="voteDateInvalid" xml:space="preserve">
+    <value>Please ensure that the vote's active date range does not overlap with another vote's.</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="expiryDateAndTimeRequired" xml:space="preserve">
+    <value>Expiry date/time is a required field.</value>
+  </data>
+  <data name="modifyVoteTitle" xml:space="preserve">
+    <value>Modify Vote</value>
+  </data>
+  <data name="results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>Are you sure you would like to delete the vote?</value>
+  </data>
+  <data name="managevote" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="overallvotes" xml:space="preserve">
+    <value>Overall Votes Results</value>
+  </data>
+  <data name="votesbydate" xml:space="preserve">
+    <value>Votes By Date</value>
+  </data>
+  <data name="votesbydesignation" xml:space="preserve">
+    <value>Votes By Designation</value>
+  </data>
+  <data name="votesbyfacility" xml:space="preserve">
+    <value>Votes By Facility</value>
+  </data>
+  <data name="expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="voteToAccept" xml:space="preserve">
+    <value>I vote to accept</value>
+  </data>
+  <data name="voteToDecline" xml:space="preserve">
+    <value>I vote to decline</value>
+  </data>
+  <data name="voteDurationInvalid" xml:space="preserve">
+    <value>Please ensure that the vote’s active date range does not exceed 7 days.</value>
+  </data>
+  <data name="displayDateInvalid" xml:space="preserve">
+    <value>Please ensure that the display date is not in the past and that it precedes the expiry date.</value>
+  </data>
+  <data name="expiryDateAndTimeToolTip" xml:space="preserve">
+    <value>Specify the date/time on which the vote ends.  This is a required field.</value>
+  </data>
+  <data name="votesbyregion" xml:space="preserve">
+    <value>Votes By Region</value>
+  </data>
+  <data name="votesbysector" xml:space="preserve">
+    <value>Votes By Sector</value>
+  </data>
+  <data name="endDateEqual" xml:space="preserve">
+    <value>Expiry date and time cannot be exactly equal to Display date and time.</value>
+  </data>
+  <data name="questionTextTooLong" xml:space="preserve">
+    <value>The question text cannot exceed 4000 characters.</value>
+  </data>
+</root>
