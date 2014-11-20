@@ -1,4 +1,4 @@
-<%@ Control Language="vb" AutoEventWireup="false" Inherits="ISL.OneWeb4.UI.UserControls.MemberLogon" %>
+<%@ Control Language="vb" AutoEventWireup="false" Inherits="ISL.OneWeb.ClientApplications.NSNU.NSNULogon.UserControls.MemberLogon" %>
 <%@ Register TagPrefix="OWWeb" Assembly="ISL.OneWeb4.UI.Controls" Namespace="ISL.OneWeb4.UI.WebControls" %>
 <OWWeb:ScriptBlock runat="server" ID="scriptMbr" ScriptType="text/javascript" DocumentSource="~/core/scripts/ow_membership.js"/>
 <div id="ow_login" class="inner">

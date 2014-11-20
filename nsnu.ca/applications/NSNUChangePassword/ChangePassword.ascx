@@ -1,4 +1,4 @@
-<%@ Control Language="vb" AutoEventWireup="false" Inherits="ISL.OneWeb4.UI.UserControls.MemberProfile" %>
+<%@ Control Language="vb" AutoEventWireup="false" Inherits="ISL.OneWeb.ClientApplications.NSNU.NSNUChangePassword.UserControls.ChangePassword" %>
 <%@ Register TagPrefix="OWWeb" Assembly="ISL.OneWeb4.UI.Controls" Namespace="ISL.OneWeb4.UI.WebControls" %>
 <OWWeb:ScriptBlock runat="server" ScriptType="text/javascript" DocumentSource="~/core/scripts/ow_membership.js"/>
 <div id="ow_profile">
@@ -7,7 +7,7 @@
 	<asp:ValidationSummary runat="server" EnableClientScript="False"
 		ShowMessageBox="False" DisplayMode="BulletList" HeaderText="There were problems with the following field(s):"
 		ForeColor="" CssClass="ow_errorHeading"/>
-	<asp:PlaceHolder ID="plcPwdMsg" Runat="server" Visible="False"><p>Your password has been changed.</p></asp:PlaceHolder>	
+	<asp:PlaceHolder ID="plcPwdMsg" Runat="server" Visible="False"><p>Your password has been changed.&nbsp;<asp:Hyperlink id="lnkContinue" runat="server">Continue</asp:Hyperlink></p></asp:PlaceHolder>	
 	<asp:PlaceHolder ID="plcPwdError" Runat="server" Visible="False"><p class="ow_error">Change password failed.</p></asp:PlaceHolder>
 	<asp:PlaceHolder ID="plcMsg" Runat="server" Visible="False"><p>Your information has been updated.</p></asp:PlaceHolder>	
 	<asp:PlaceHolder ID="plcError" Runat="server" Visible="False"><p class="ow_error">Update failed.</p></asp:PlaceHolder>
@@ -19,7 +19,9 @@
 
 	<asp:PlaceHolder ID="plcPassword" Runat="server">
 		<hr class="normal" />
-		<h2>Change your password:  <span style="font-size:smaller;font-weight:normal;">(Leave blank to keep existing password)</span></h2>
+		<p>Welcome to MyNSNU!</p> 
+        <p>As this is your first time logging in, we require you to change your password.</p>
+        <p>Your new password should be easy for you to remember without being obvious for someone else to guess. Please make your password secure by using a mix of between 6 and 20 uppercase and lowercase letters, and numbers.</p>
 		<p class="ow_fld">
 			<OWWeb:FieldLabel runat="server" For="ow_txtOriginalPassword" ToolTip="For security purposes, please enter your original password.">Original password:</OWWeb:FieldLabel><br />
 			<asp:TextBox runat="server" TextMode="Password" id="ow_txtOriginalPassword" width="100" MaxLength="20" CssClass="ow_txt" />
@@ -43,25 +45,25 @@
 		</p>
 	</asp:PlaceHolder>
 	
-	<asp:PlaceHolder ID="plcPersonal" Runat="server">
+	<asp:PlaceHolder ID="plcPersonal" Runat="server" Visible="False">
 		<hr class="normal" />
 		<h2>Update your personal info:</h2>
 
-		<p class="ow_fld" style="display:none;">
+		<p class="ow_fld">
 			<OWWeb:FieldLabel runat="server" For="ow_txtFirstName" ToolTip="Please enter your first name.  This is a required field.">First name:</OWWeb:FieldLabel><br />
 			<asp:TextBox id="ow_txtFirstName" Runat="server" MaxLength="50" Width="150" CssClass="ow_txt"/>&nbsp;<span class="isl_req">&bull;</span>
 			<asp:RequiredFieldValidator ClientID="ow_rfvFirstName" Runat="server" 
 				ErrorMessage="'First name' is a required field." Display="None" EnableClientScript="False" 
 				ControlToValidate="ow_txtFirstName" />
 		</p>
-		<p class="ow_fld"  style="display:none;">
+		<p class="ow_fld">
 			<OWWeb:FieldLabel runat="server" For="ow_txtLastName" ToolTip="Please enter your last name.  This is a required field.">Last name:</OWWeb:FieldLabel><br />
 			<asp:TextBox id="ow_txtLastName" Runat="server" MaxLength="50" Width="150" CssClass="ow_txt"/>&nbsp;<span class="isl_req">&bull;</span>
 			<asp:RequiredFieldValidator ClientID="ow_rfvLastName" Runat="server" 
 				ErrorMessage="'Last name' is a required field." Display="None" EnableClientScript="False" 
 				ControlToValidate="ow_txtLastName" />
 		</p>
-		<p class="ow_fld"  style="display:none;">
+		<p class="ow_fld">
 			<OWWeb:FieldLabel runat="server" For="ow_txtTitle" ToolTip="Please enter your title.">Title:</OWWeb:FieldLabel><br />
 			<asp:TextBox id="ow_txtTitle" Runat="server" MaxLength="50" Width="150" CssClass="ow_txt"/>
 		</p>
@@ -83,7 +85,7 @@
 		<asp:ImageButton id="ow_imgUpdate" Runat="server" CssClass="ow_imgUpdate" ImageUrl="~/core/images/blank.gif" CausesValidation="False"/>
 	</asp:PlaceHolder>
 	
-	<asp:PlaceHolder ID="plcRemove" Runat="server">
+	<asp:PlaceHolder ID="plcRemove" Runat="server" Visible="false">
 		<hr class="normal" />
 		<h2>Remove yourself from the system:</h2>
 		<p class="ow_fld">
