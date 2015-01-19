@@ -73,8 +73,14 @@
     </div>
   </div>
   <div class="copyright">
-    <div class="inner">
-      <OW:ContentBlock Position="footer_copyright" Display="Block" CssClass="ow_block" runat="server" />
+    <div class="inner cf">
+      <div class="pull_left">
+        <OW:ContentBlock Position="footer_copyright" Display="Block" CssClass="ow_block" runat="server" />
+      </div>
+      <div class="pull_right">
+        <div class="addthis_horizontal_follow_toolbox"></div>
+      </div>
+    </div>
   </div>
 </footer>
 </div>
