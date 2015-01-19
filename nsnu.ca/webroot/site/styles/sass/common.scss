@@ -69,3 +69,35 @@
     aside.col1,
     .addthis_line {display:none !important; }
 }
+
+/* Additional Footer Styles for AddThis */
+
+#footer_main .copyright {
+  padding: 0.75em;
+
+  p {
+    margin: 0 !important;
+    line-height: 1em !important;
+  }
+  .footer_text {
+    padding-top: 0.6em;
+  }
+}
+
+.pull_left{
+  float: left;
+}
+.pull_right {
+  float: right;
+}
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
