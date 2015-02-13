@@ -58,15 +58,6 @@ $interface-spacing: 50px;
 	}
 }
 
-body .home #content > .inner .login .inner h1 .icon{
-	@include interface-sprite(login-open);
-	display: none;
-}
-
-body .home #content > .inner .login.active .inner h1 .icon{
-	@include interface-sprite(login-close);
-}
-
 a.externallink {padding-right: 16px; background: url(/site/images/icon_externallink.gif) no-repeat right center; }
 a.pdflink {padding-right: 16px; background: url(/site/images/icon_pdflink.gif) no-repeat right center; }
 a.emaillink {padding-right: 16px; background: url(/site/images/icon_emaillink.gif) no-repeat right center;}
