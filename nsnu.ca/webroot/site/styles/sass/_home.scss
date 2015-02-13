@@ -92,9 +92,10 @@ body{
 								background: #8f8d89;
 								position: relative;
 								.icon{
+                                    @extend %interface-sprite;
+                                    background-position: 0 -295px;
 									position: absolute;
 									display: block;
-									@include interface-sprite(hero-arrow);
 									left: 10px;
 									top: -8px;
 									width: 16px;
@@ -119,7 +120,6 @@ body{
 			margin-left: -650px;
 			width: 1300px;
 			height: 864px;
-			
 		}
 		#content{
 			min-height:400px;
@@ -130,7 +130,7 @@ body{
 				position: relative;
 				 .col1,.col2,.col3{
 			 		width: 33.3%;
-			 		margin: 25px 0 0 0;
+			 		margin: 25px 0;
 			 		color: #242424;
 
 			 		p,li,td,th{
@@ -146,7 +146,6 @@ body{
 				 }
 				 .login{
 			 		background: rgba(#473d18,0.06);
-			 		position: absolute;
 			 		left: -16px;
 			 		top: 0;
 			 		.inner{
@@ -171,12 +170,6 @@ body{
 			 			}
 			 		}
 				 }
-				 .col1{
-			 		margin-left: 33.3%;
-				 }
-
-			 
-
 			}
 		}
 		#footer_main{

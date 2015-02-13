@@ -102,12 +102,13 @@ a{
 		}
 	}
 	input[type="submit"]{
+        @extend %interface-sprite;
+        background-position: 0 0;
 		position: absolute;
 		right: 5px;
 		top: 8px;
 		width: 20px;
 		height: 20px;
-		@include interface-sprite(icon_magnify);
 		background-position: 0 4px;
 		border: none;
 		outline: none;
@@ -169,9 +170,12 @@ a{
 			margin: 35px 0 0 0;
 			.btn_menu{
 				display: none;
-				@include interface-sprite(menu-open);
+				@extend %interface-sprite;
+                background-position: 0 -415px;
+
 				&.current{
-					@include interface-sprite(menu-close);
+					@extend %interface-sprite;
+                    background-position: 0 -62px;
 				}
 			}
 			#ow_mainNav{
@@ -194,15 +198,14 @@ a{
 						}
 						&.nav_open{
 							.btn_open{
-								@include interface-sprite(icon_arrow_up_white);
-								
+								@extend %interface-sprite;
+                                background-position: 0 -180px;
 							}
-
-							
 						}
 						.btn_open{
 							display: none;
-							@include interface-sprite(icon_arrow_down_blue);
+                            @extend %interface-sprite;
+                            background-position: 0 -125px;
 						}
 						a{
 							display: block;

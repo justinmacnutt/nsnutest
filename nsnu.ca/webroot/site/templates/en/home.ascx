@@ -76,11 +76,6 @@
 </div>
 <article id="content" role="main">
   <div class="inner clearfix">
-    <div class="col1">
-      <div class="inner">
-        <OW:ContentBlock Position="home_content1" Display="Block" CssClass="ow_block" runat="server" />
-      </div>
-    </div>
     <aside class="col2 login">
       <OW:DependentBlock runat="server" DependsOnPosition="home_login" DependsOnGroup="^*">
         <OW:ContentBlock Position="home_login" Display="Block" CssClass="ow_block" runat="server" />
@@ -89,6 +84,11 @@
         <div class="inner"><OW:ContentBlock Position="member_info" Display="Block" CssClass="ow_block" runat="server" /></div>
       </OW:DependentBlock>    
     </aside>
+    <div class="col1">
+      <div class="inner">
+        <OW:ContentBlock Position="home_content1" Display="Block" CssClass="ow_block" runat="server" />
+      </div>
+    </div>
     <aside class="col3">
       <div class="inner">
         <OW:ContentBlock Position="home_right_feature1" Display="Block" CssClass="ow_block" runat="server" />
