@@ -15,6 +15,6 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
     {
         public const string MODE = "mode";
         public const string SURVEY = "survey";
-        public const string COLLECTOR = "collector";
+        public const string LINKTEXT = "linktext";
     }
 }

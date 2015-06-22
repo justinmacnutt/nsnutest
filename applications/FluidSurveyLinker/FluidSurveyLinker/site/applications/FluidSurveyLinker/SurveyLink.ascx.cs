@@ -46,6 +46,8 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
                 return;
             }
 
+            hl_survey.Text = _main.LinkText == String.Empty ? "Survey" : _main.LinkText;
+
             var FSLTA = new EntitiesTableAdapters.FluidSurveyLinkerTableAdapter();
 
             var links = FSLTA.GetDataByIds(_user, _main.Survey);

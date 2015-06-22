@@ -57,6 +57,22 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
             }
         }
 
+        [OWWeb.Applications.ApplicationParameter("Enter the text to use for the survey link.", "Link Text")]
+        [OWWeb.Applications.ApplicableModes((int)Mode.Link)]
+        public string LinkText
+        {
+            get
+            {
+                if (this.ViewState[Constants.LINKTEXT] == null)
+                    return String.Empty;
+                return (String)this.ViewState[Constants.LINKTEXT];
+            }
+            set
+            {
+                this.ViewState[Constants.LINKTEXT] = value;
+            }
+        }
+
         #endregion
 
         protected void Page_Init(object sender, EventArgs e)
