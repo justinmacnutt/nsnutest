@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluidSurveyLinker", "FluidSurveyLinker\FluidSurveyLinker.csproj", "{6F2C59FC-0645-446E-8A9C-9910C0DD1AF9}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FluidSurveyLinkerDB", "FluidSurveyLinkerDB\FluidSurveyLinkerDB.sqlproj", "{757500FE-9842-4A73-971E-931206622E55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{6F2C59FC-0645-446E-8A9C-9910C0DD1AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F2C59FC-0645-446E-8A9C-9910C0DD1AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F2C59FC-0645-446E-8A9C-9910C0DD1AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757500FE-9842-4A73-971E-931206622E55}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
