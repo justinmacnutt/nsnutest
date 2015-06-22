@@ -29,12 +29,26 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
                 return;
             }
 
-            ISL.OneWeb4.Sys.Security.OneWebIdentity identity = (ISL.OneWeb4.Sys.Security.OneWebIdentity)System.Threading.Thread.CurrentPrincipal.Identity;
-            var _user = identity.User;
+            var _user = 0;
+
+            try
+            {
+                _user = ISL.OneWeb4.UI.Components.Membership.MembershipManager.CurrentMember.MemberId;
+            }
+            catch (Exception ex)
+            {
+                hl_survey.Visible = false;
+                return;
+            }
+
+            if (_user < 1) {
+                hl_survey.Visible = false;
+                return;
+            }
 
             var FSLTA = new EntitiesTableAdapters.FluidSurveyLinkerTableAdapter();
 
-            var links = FSLTA.GetDataByIds(_user.UserId, _main.Survey);
+            var links = FSLTA.GetDataByIds(_user, _main.Survey);
 
             if (links != null && links.Rows.Count > 0)
             {
@@ -42,8 +56,8 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
                 return;
             }
 
-            //try
-            //{
+            try
+            {
                 var apiUrl = Properties.Settings.Default.BaseUrl + "/api/v2/surveys/" + _main.Survey + "/invite-codes/";
                 var credentials = Properties.Settings.Default.ApiKey + ":" + Properties.Settings.Default.Password;
 
@@ -78,13 +92,13 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
                     string inviteUrl = response.invites[0].invite_url;
                     hl_survey.NavigateUrl = inviteUrl;
 
-                    FSLTA.Insert(_user.UserId, _main.Survey, inviteUrl);
+                    FSLTA.Insert(_user, _main.Survey, inviteUrl);
                 }
-            //}
-            //catch (Exception ex)
-            //{
-            //    hl_survey.Visible = false;
-            //}
+            }
+            catch (Exception ex)
+            {
+                hl_survey.Visible = false;
+            }
             
         }
 
