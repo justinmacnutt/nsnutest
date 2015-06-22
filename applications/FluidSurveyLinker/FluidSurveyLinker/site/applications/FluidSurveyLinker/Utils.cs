@@ -8,7 +8,7 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
     [Serializable()]
     public enum Mode
     {
-        SurveyLink
+        Link
     }
 
     public static class Constants

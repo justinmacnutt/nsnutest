@@ -22,7 +22,7 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
             get
             {
                 if (this.ViewState[Constants.MODE] == null) {
-                    this.ViewState[Constants.MODE] = Mode.SurveyLink;
+                    this.ViewState[Constants.MODE] = Mode.Link;
                 }
                     
                 return (Mode)this.ViewState[Constants.MODE];
@@ -35,14 +35,14 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
 
                 }
                 else {
-                    this.ViewState[Constants.MODE] = Mode.SurveyLink;
+                    this.ViewState[Constants.MODE] = Mode.Link;
 
                 }
             }
         }
 
         [OWWeb.Applications.ApplicationParameter("Enter the ID of the survey to generate links for.", "Survey ID")]
-        [OWWeb.Applications.ApplicableModes((int)Mode.SurveyLink)]
+        [OWWeb.Applications.ApplicableModes((int)Mode.Link)]
         public string Survey
         {
             get
@@ -57,29 +57,13 @@ namespace ISL.OneWeb.NSNU.FluidSurveyLinker
             }
         }
 
-        //[OWWeb.Applications.ApplicationParameter("Enter the ID of the collector to generate links for.", "Collector")]
-        //[OWWeb.Applications.ApplicableModes((int)Mode.SurveyLink)]
-        //public string Collector
-        //{
-        //    get
-        //    {
-        //        if (this.ViewState[Constants.COLLECTOR] == null)
-        //            return String.Empty;
-        //        return (String)this.ViewState[Constants.COLLECTOR];
-        //    }
-        //    set
-        //    {
-        //        this.ViewState[Constants.COLLECTOR] = value;
-        //    }
-        //}
-
         #endregion
 
         protected void Page_Init(object sender, EventArgs e)
         {
             switch (this.Mode)
             {
-                case Mode.SurveyLink:
+                case Mode.Link:
                     _app = this.LoadControl("SurveyLink.ascx") as System.Web.UI.UserControl;
                     break;
                 default:

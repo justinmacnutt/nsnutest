@@ -75,7 +75,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
     <Content Include="Entities.xsc">
       <DependentUpon>Entities.xsd</DependentUpon>
     </Content>
@@ -130,9 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Libraries\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="site\applications\FluidSurveyLinker\Application.ascx" />
     <Content Include="site\applications\FluidSurveyLinker\SurveyLink.ascx" />
