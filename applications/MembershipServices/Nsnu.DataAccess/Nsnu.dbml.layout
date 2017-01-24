@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.625, 30.875" name="Nsnu">
+  <DataContextMoniker Name="/NsnuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="09523289-2efc-466e-9ad5-a1055e210b1d" absoluteBounds="6.875, 24.375, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/NsnuDataContext/Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d659d76-4fcf-42f6-aece-2eb9ca0ec720" absoluteBounds="6.8900000000000006, 24.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ab467f6-8a21-4d7b-ac33-b941a653381e" absoluteBounds="12.375, 7.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/NsnuDataContext/FacilityTableOfficer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0269dda9-805f-4218-9076-fc4b2b64e9ae" absoluteBounds="12.39, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82eab432-b5f1-4f06-9bb3-7a2d9c94e91f" absoluteBounds="4.125, 1.25, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/NsnuDataContext/Committee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7fbb766a-b50b-45ab-b335-187eb906bcb5" absoluteBounds="4.1400000000000006, 1.7100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e67186c2-15c9-44a1-8217-a2a7a97bdd36" absoluteBounds="6.875, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NsnuDataContext/CommitteePosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1acbef96-87ab-44b2-bae6-721c70d6af5d" absoluteBounds="6.8900000000000006, 1.2100000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85fb8cec-f2ca-4859-aaf4-41a1b712963a" absoluteBounds="1.125, 21.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/NsnuDataContext/District" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ad994fc-448f-44cc-9c5c-0e4f3bd0afe6" absoluteBounds="1.1400000000000001, 22.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74698a0b-85e6-4f98-a4a6-9665387184bd" absoluteBounds="9.625, 22.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/FacilityAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bb468f2-82ea-4e40-929b-2f793023225c" absoluteBounds="9.64, 23.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18ae1f88-e174-4f03-9438-cb6c87551daf" absoluteBounds="9.375, 4.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/NsnuDataContext/FacilityLocalPosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44930746-abf1-4c67-81e0-c3cee9d884aa" absoluteBounds="9.39, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3953a77d-8081-45df-a628-bf18f6efcb7a" absoluteBounds="6.625, 27.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/FacilityPhone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0507ab5-d2b6-4847-aea1-2e9dd2951bf0" absoluteBounds="6.6400000000000006, 28.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9150e03-30fc-4b2e-aa3e-11aa9e3989af" absoluteBounds="1.125, 25.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/NsnuDataContext/LabourRepresentative" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f91fdf72-d134-4490-9ace-7ed839f21e21" absoluteBounds="1.1400000000000001, 26.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ea30c6b-286f-4317-8add-3151f73141a0" absoluteBounds="6.625, 18.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/NsnuDataContext/Note" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de0bedd1-3bea-4296-8801-69e8b4523a29" absoluteBounds="6.64, 19.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec8729bd-4d88-4050-a911-33832c4811d3" absoluteBounds="9.625, 10.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/NurseAddress" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b209644d-e3ff-4365-89ec-d57922669d5d" absoluteBounds="9.64, 11.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" absoluteBounds="6.625, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NsnuDataContext/NurseFacility" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eeaf7b09-ca6c-4bdf-bb59-e115be46e540" absoluteBounds="6.6400000000000006, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d495e552-2f07-4819-99db-1217f1fca6cc" absoluteBounds="6.625, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/NurseOptOut" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75eb5ae3-1f9b-4ca0-9b77-89d35aa74711" absoluteBounds="6.64, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edfe91eb-7d49-444c-9869-73cdfd52e7af" absoluteBounds="6.625, 12.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/NursePhone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c20fd0aa-ee16-427b-8c5e-93c49a003075" absoluteBounds="6.64, 13.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c682bd50-a59d-44ef-bc9b-c4470f22bfda" absoluteBounds="4.125, 24.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refAddressType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df519661-0d9b-4c23-82de-4d80de815c59" absoluteBounds="4.14, 25.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bed9472d-5fae-47d5-b156-49e8e6fb6071" absoluteBounds="4.125, 15.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refCommitteePosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c64b3eff-576c-4c50-ba5e-1c23aa8ce684" absoluteBounds="4.1400000000000006, 15.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6353a69a-54c5-4ef2-a2cd-b130077b726e" absoluteBounds="1.125, 17.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refEmployerGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15ef5888-fb09-4027-a18a-7419da459181" absoluteBounds="1.1400000000000001, 18.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6db460f-cb2e-4c93-936a-e643f078287c" absoluteBounds="0.75, 6.125, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/NsnuDataContext/refEmploymentStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e51c75e5-d753-404b-bbc2-58787c8c397c" absoluteBounds="0.765, 6.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c7e82273-1e0d-43d7-ac1c-58e6b86b9b2f" absoluteBounds="0.5, 4.625, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/NsnuDataContext/refEmploymentType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50b726f6-45bd-4b13-b213-42ee35ef3c75" absoluteBounds="0.51499999999999968, 5.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e2096e9-4613-438d-a84d-4b4b567f4a67" absoluteBounds="1.125, 19.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refFacilityType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="962bcbd8-d824-44dc-9440-acfc0ddd0368" absoluteBounds="1.1400000000000001, 20.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f5d968d-46f4-4be5-9916-3abbe2e3f452" absoluteBounds="0.75, 13.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refGender" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37335117-9654-4024-88b5-304bda95cfd6" absoluteBounds="0.765, 14.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30dea0c4-3961-41f9-8a63-1c9f986ec346" absoluteBounds="4.5, 3.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/NsnuDataContext/refLocalPosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5afada14-88c7-4516-8b0d-e9953f06a1fb" absoluteBounds="4.5150000000000006, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d36e11d-203e-4bd9-8bed-52bd83358b62" absoluteBounds="0.75, 15.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refNurseDesignation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e90abbbe-b5c4-42f6-b3d6-8167c3fa201b" absoluteBounds="0.765, 16.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb6983f2-77f7-4323-8908-d7dc8594e4cc" absoluteBounds="10.25, 14.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refOptOut" />
+      <nestedChildShapes>
+        <elementListCompartment Id="639db487-26e1-4160-8535-ffeb03df725d" absoluteBounds="10.265, 14.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4acb09f9-9baf-4d43-9fb0-fe2db24b722b" absoluteBounds="1.125, 28.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/refPhoneType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8d2a82e-25e9-4fa1-b033-ce03c81c4413" absoluteBounds="1.1400000000000001, 29.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab026ef8-4445-417e-8dd1-98c8b4595773" absoluteBounds="9.625, 2.875, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/NsnuDataContext/refTableOfficerPosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe5cf423-1ca1-4bde-874f-84f1b3e86dc6" absoluteBounds="9.64, 3.3350000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f53a0c81-aa28-444a-9151-23ac3ae28525" absoluteBounds="1.375, 23.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0179f45a-7cd9-4355-9212-6f39112151cf" absoluteBounds="1.3900000000000001, 24.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a32d606-5d04-49e0-975b-e7225da50209" absoluteBounds="0.75, 10.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/NsnuDataContext/UserProfile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="105deb24-38b9-41c3-b234-3c2c9a7a24da" absoluteBounds="0.765, 11.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="008dbbc1-40b8-4d00-b91c-9b1ae1b0690d" absoluteBounds="3.5, 7.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/UserProfileRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b9f5a44-32d5-4156-b6d8-c41e2832de06" absoluteBounds="3.515, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61e29d75-86a6-4719-a67a-242243fb578e" absoluteBounds="0.75, 7.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NsnuDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be1e4b9b-21c6-4b52-960b-e5359fb3a8bb" absoluteBounds="0.765, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1087be7e-7e7f-4851-993b-ff627cbd75e5" absoluteBounds="6.625, 21.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/NsnuDataContext/VersionHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2c002c1-6f37-4f4e-bae1-a9ecb70c7a75" absoluteBounds="6.64, 21.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 1.71242390950521); (6.875 : 1.71242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Committee/Committee_CommitteePosition" />
+      <nodes>
+        <classShapeMoniker Id="82eab432-b5f1-4f06-9bb3-7a2d9c94e91f" />
+        <classShapeMoniker Id="e67186c2-15c9-44a1-8217-a2a7a97bdd36" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 25.4982922363281); (10.625 : 25.4982922363281); (10.625 : 23.9711531575521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Address/Address_FacilityAddress" />
+      <nodes>
+        <classShapeMoniker Id="09523289-2efc-466e-9ad5-a1055e210b1d" />
+        <classShapeMoniker Id="74698a0b-85e6-4f98-a4a6-9665387184bd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.8046875 : 24.375); (8.8046875 : 11.8070931575521); (9.625 : 11.8070931575521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Address/Address_NurseAddress" />
+      <nodes>
+        <classShapeMoniker Id="09523289-2efc-466e-9ad5-a1055e210b1d" />
+        <classShapeMoniker Id="ec8729bd-4d88-4050-a911-33832c4811d3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 8.46242390950521); (8.65104166666667 : 8.46242390950521 : JumpStart); (8.81770833333333 : 8.46242390950521 : JumpEnd); (9.375 : 8.46242390950521); (9.375 : 7.375); (13.375 : 7.375); (13.375 : 7.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/NurseFacility/NurseFacility_FacilityTableOfficer" />
+      <nodes>
+        <classShapeMoniker Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" />
+        <classShapeMoniker Id="1ab467f6-8a21-4d7b-ac33-b941a653381e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.625 : 7.75); (7.625 : 5.50525024414062); (8.65104166666667 : 5.50525024414062 : JumpStart); (8.81770833333333 : 5.50525024414062 : JumpEnd); (9.375 : 5.50525024414062)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/NurseFacility/NurseFacility_FacilityLocalPosition" />
+      <nodes>
+        <classShapeMoniker Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" />
+        <classShapeMoniker Id="18ae1f88-e174-4f03-9438-cb6c87551daf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 25.423076578776); (6.875 : 25.423076578776)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refAddressType/refAddressType_Address" />
+      <nodes>
+        <classShapeMoniker Id="c682bd50-a59d-44ef-bc9b-c4470f22bfda" />
+        <classShapeMoniker Id="09523289-2efc-466e-9ad5-a1055e210b1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 15.673076578776); (8.734375 : 15.673076578776); (8.734375 : 2.17484781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refCommitteePosition/refCommitteePosition_CommitteePosition" />
+      <nodes>
+        <classShapeMoniker Id="bed9472d-5fae-47d5-b156-49e8e6fb6071" />
+        <classShapeMoniker Id="e67186c2-15c9-44a1-8217-a2a7a97bdd36" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.59375 : 5.81899251302083); (0.59375 : 9.2300434453125); (3.04166666666667 : 9.2300434453125 : JumpStart); (3.20833333333333 : 9.2300434453125 : JumpEnd); (5.54166416666667 : 9.2300434453125 : JumpStart); (5.73958333333333 : 9.2300434453125 : JumpEnd); (6.625 : 9.2300434453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refEmploymentType/refEmploymentType_NurseFacility" />
+      <nodes>
+        <classShapeMoniker Id="c7e82273-1e0d-43d7-ac1c-58e6b86b9b2f" />
+        <classShapeMoniker Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 4.43990315755208); (8.65104166666667 : 4.43990315755208 : JumpStart); (8.81770833333333 : 4.43990315755208 : JumpEnd); (9.46875 : 4.43990315755208); (9.46875 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refLocalPosition/refLocalPosition_FacilityLocalPosition" />
+      <nodes>
+        <classShapeMoniker Id="30dea0c4-3961-41f9-8a63-1c9f986ec346" />
+        <classShapeMoniker Id="18ae1f88-e174-4f03-9438-cb6c87551daf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.625 : 3.42307657877604); (13.375 : 3.42307657877604); (13.375 : 7.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refTableOfficerPosition/refTableOfficerPosition_FacilityTableOfficer" />
+      <nodes>
+        <classShapeMoniker Id="ab026ef8-4445-417e-8dd1-98c8b4595773" />
+        <classShapeMoniker Id="1ab467f6-8a21-4d7b-ac33-b941a653381e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.25 : 23.625); (2.25 : 22.8855004882813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Region/Region_District" />
+      <nodes>
+        <classShapeMoniker Id="f53a0c81-aa28-444a-9151-23ac3ae28525" />
+        <classShapeMoniker Id="85fb8cec-f2ca-4859-aaf4-41a1b712963a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.625); (3.125 : 10.25); (3.125 : 8.47199625651042); (3.5 : 8.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/UserProfile/UserProfile_UserProfileRole" />
+      <nodes>
+        <classShapeMoniker Id="2a32d606-5d04-49e0-975b-e7225da50209" />
+        <classShapeMoniker Id="008dbbc1-40b8-4d00-b91c-9b1ae1b0690d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.08653828938802); (3.5 : 8.08653828938802)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/UserRole/UserRole_UserProfileRole" />
+      <nodes>
+        <classShapeMoniker Id="61e29d75-86a6-4719-a67a-242243fb578e" />
+        <classShapeMoniker Id="008dbbc1-40b8-4d00-b91c-9b1ae1b0690d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="81d2397e-cc15-45eb-8d17-076fac585957" absoluteBounds="3.875, 28.625, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/NsnuDataContext/Phone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="672bbd7c-a0b7-45bc-b383-b5dc78ce4e73" absoluteBounds="3.8899999999999997, 29.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 29.3211802997296); (7.625 : 29.3211802997296); (7.625 : 28.9439925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Phone/Phone_FacilityPhone" />
+      <nodes>
+        <classShapeMoniker Id="81d2397e-cc15-45eb-8d17-076fac585957" />
+        <classShapeMoniker Id="3953a77d-8081-45df-a628-bf18f6efcb7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.875 : 28.625); (4.875 : 26.3189925130208); (6.375 : 26.3189925130208); (6.375 : 13.4719962565104); (6.41666666666667 : 13.4719962565104 : JumpStart); (6.58333333333333 : 13.4719962565104 : JumpEnd); (6.625 : 13.4719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Phone/Phone_NursePhone" />
+      <nodes>
+        <classShapeMoniker Id="81d2397e-cc15-45eb-8d17-076fac585957" />
+        <classShapeMoniker Id="edfe91eb-7d49-444c-9869-73cdfd52e7af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 29.423076578776); (3.875 : 29.423076578776)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refPhoneType/refPhoneType_Phone" />
+      <nodes>
+        <classShapeMoniker Id="4acb09f9-9baf-4d43-9fb0-fe2db24b722b" />
+        <classShapeMoniker Id="81d2397e-cc15-45eb-8d17-076fac585957" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="130a7e4f-39bf-4115-a2a5-158365a56521" absoluteBounds="9.625, 7.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/NsnuDataContext/NurseCommittee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8a0f33f-c46c-49c5-931c-2de1328ed0c8" absoluteBounds="9.64, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.83594 : 2.17484781901042); (8.83594 : 9.30794514973958); (9.625 : 9.30794514973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/CommitteePosition/CommitteePosition_NurseCommittee" />
+      <nodes>
+        <classShapeMoniker Id="e67186c2-15c9-44a1-8217-a2a7a97bdd36" />
+        <classShapeMoniker Id="130a7e4f-39bf-4115-a2a5-158365a56521" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.96875 : 14.5); (11.96875 : 10.59375); (8.81770833333333 : 10.59375 : JumpStart); (8.65104166666667 : 10.59375 : JumpEnd); (8.625 : 10.59375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refOptOut/refOptOut_NurseOptOut" />
+      <nodes>
+        <classShapeMoniker Id="bb6983f2-77f7-4323-8908-d7dc8594e4cc" />
+        <classShapeMoniker Id="d495e552-2f07-4819-99db-1217f1fca6cc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" absoluteBounds="3.75, 10.5, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/NsnuDataContext/Nurse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d370187-5b66-436c-af85-d4c709cf5ab9" absoluteBounds="3.7649999999999997, 10.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.78125 : 14.0016097005208); (3.78125 : 19.53125); (6.41666666666667 : 19.53125 : JumpStart); (6.58333333333333 : 19.53125 : JumpEnd); (6.625 : 19.53125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_Note" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="8ea30c6b-286f-4317-8add-3151f73141a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 12.0005428352865); (6.41666666666667 : 12.0005428352865 : JumpStart); (6.58333333333333 : 12.0005428352865 : JumpEnd); (8.65104166666667 : 12.0005428352865 : JumpStart); (8.81770833333333 : 12.0005428352865 : JumpEnd); (9.625 : 12.0005428352865)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_NurseAddress" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="ec8729bd-4d88-4050-a911-33832c4811d3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 10.5); (5.65625 : 8.53929768880208); (6.625 : 8.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_NurseFacility" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 11.0344962565104); (6.41666666666667 : 11.0344962565104 : JumpStart); (6.58333333333333 : 11.0344962565104 : JumpEnd); (6.625 : 11.0344962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_NurseOptOut" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="d495e552-2f07-4819-99db-1217f1fca6cc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 13.1109981282552); (6.41666666666667 : 13.1109981282552 : JumpStart); (6.58333333333333 : 13.1109981282552 : JumpEnd); (6.625 : 13.1109981282552)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_NursePhone" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="edfe91eb-7d49-444c-9869-73cdfd52e7af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.8906275 : 14.0016097005208); (3.8906275 : 21.21875); (4.91666666666667 : 21.21875 : JumpStart); (5.08333333333333 : 21.21875 : JumpEnd); (6.29166666666667 : 21.21875 : JumpStart); (6.58333333333333 : 21.21875 : JumpEnd); (6.625 : 21.21875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_VersionHistory" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="1087be7e-7e7f-4851-993b-ff627cbd75e5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.6875025 : 10.5); (5.6875025 : 9.48964680989583); (7.54166666666667 : 9.48964680989583 : JumpStart); (7.70833333333333 : 9.48964680989583 : JumpEnd); (8.65104166666667 : 9.48964680989583 : JumpStart); (8.81770833333333 : 9.48964680989583 : JumpEnd); (9.625 : 9.48964680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Nurse/Nurse_NurseCommittee" />
+      <nodes>
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+        <classShapeMoniker Id="130a7e4f-39bf-4115-a2a5-158365a56521" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.72199625651042); (5.6249975 : 6.72199625651042); (5.6249975 : 10.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refEmploymentStatus/refEmploymentStatus_Nurse" />
+      <nodes>
+        <classShapeMoniker Id="b6db460f-cb2e-4c93-936a-e643f078287c" />
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.5665536067708); (3.69791666666667 : 14.5665536067708 : JumpStart); (4.04427333333333 : 14.5665536067708 : JumpEnd); (4.80469 : 14.5665536067708); (4.80469 : 14.0016097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refGender/refGender_Nurse" />
+      <nodes>
+        <classShapeMoniker Id="5f5d968d-46f4-4be5-9916-3abbe2e3f452" />
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.6627425130208); (3.69791666666667 : 16.6627425130208 : JumpStart); (3.86458333333333 : 16.6627425130208 : JumpEnd); (3.96094 : 16.6627425130208); (3.96094 : 14.0016097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refNurseDesignation/refNurseDesignation_Nurse" />
+      <nodes>
+        <classShapeMoniker Id="0d36e11d-203e-4bd9-8bed-52bd83358b62" />
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.6378516210938); (3.75 : 11.6378516210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/UserProfile/UserProfile_Nurse" />
+      <nodes>
+        <classShapeMoniker Id="2a32d606-5d04-49e0-975b-e7225da50209" />
+        <classShapeMoniker Id="2643e7e2-cea9-4aab-ae4a-6e41e19d0255" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ec88620f-382a-4371-8b0f-4df43147c5b2" absoluteBounds="4, 21.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/NsnuDataContext/Facility" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcd731ca-df5b-4991-8c6f-8d1925b527d4" absoluteBounds="4.015, 21.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 23.3405989583333); (6.29166666666667 : 23.3405989583333 : JumpStart); (6.45833333333333 : 23.3405989583333 : JumpEnd); (8.72135416666667 : 23.3405989583333 : JumpStart); (8.88802083333333 : 23.3405989583333 : JumpEnd); (9.625 : 23.3405989583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Facility/Facility_FacilityAddress" />
+      <nodes>
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+        <classShapeMoniker Id="74698a0b-85e6-4f98-a4a6-9665387184bd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5 : 23.7228011067708); (5 : 24.625); (6.29166666666667 : 24.625 : JumpStart); (6.45833333333333 : 24.625 : JumpEnd); (6.5 : 24.625); (6.5 : 28.3469962565104); (6.625 : 28.3469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Facility/Facility_FacilityPhone" />
+      <nodes>
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+        <classShapeMoniker Id="3953a77d-8081-45df-a628-bf18f6efcb7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6 : 22.3265474791667); (6.5 : 22.3265474791667); (6.5 : 9.95359537760417); (7.625 : 9.95359537760417); (7.625 : 9.32859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/Facility/Facility_NurseFacility" />
+      <nodes>
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+        <classShapeMoniker Id="0b78738c-4d01-4f10-82e4-57dec9cc3f0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 22.3181469726563); (4 : 22.3181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/District/District_Facility" />
+      <nodes>
+        <classShapeMoniker Id="85fb8cec-f2ca-4859-aaf4-41a1b712963a" />
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 18.4719962565104); (3.69791666666667 : 18.4719962565104 : JumpStart); (3.86458333333333 : 18.4719962565104 : JumpEnd); (5 : 18.4719962565104); (5 : 21.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refEmployerGroup/refEmployerGroup_Facility" />
+      <nodes>
+        <classShapeMoniker Id="6353a69a-54c5-4ef2-a2cd-b130077b726e" />
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 20.3469962565104); (3.80729416666667 : 20.3469962565104 : JumpStart); (3.97396083333333 : 20.3469962565104 : JumpEnd); (4.4687475 : 20.3469962565104); (4.4687475 : 21.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/refFacilityType/refFacilityType_Facility" />
+      <nodes>
+        <classShapeMoniker Id="3e2096e9-4613-438d-a84d-4b4b567f4a67" />
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 26.6651432291667); (4.03125 : 26.6651432291667); (4.03125 : 23.7228011067708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NsnuDataContext/LabourRepresentative/LabourRepresentative_Facility" />
+      <nodes>
+        <classShapeMoniker Id="e9150e03-30fc-4b2e-aa3e-11aa9e3989af" />
+        <classShapeMoniker Id="ec88620f-382a-4371-8b0f-4df43147c5b2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

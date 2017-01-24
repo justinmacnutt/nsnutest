@@ -1,0 +1,188 @@
+﻿/***** Reset & Basics *****/
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video 							{ margin: 0; padding: 0; border: 0; font-size:100%; font:inherit; vertical-align:baseline; }
+
+article, aside, details, figcaption, 
+figure, footer, header, hgroup, menu, 
+nav, section 							{ display:block; }
+
+body 									{ line-height:1; }
+
+ol, ul 									{ list-style:none; }
+
+blockquote, q 							{ quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after 						{ content:''; content:none; }
+
+table 									{ border-collapse:collapse; border-spacing:0; }
+	
+/***** Basic Styles *****/
+html									{ background: #ffffff; font-size: 62.5%; overflow-y:scroll; overflow:-moz-scrollbars-vertical; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: #f3f5f6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body 									{ margin: 0; padding: 0; width: 100%; background-color: transparent; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+
+/***** Typography *****/
+h1, h2, h3, h4, h5, h6 					{ margin:0; padding:0; font-weight:normal; text-rendering: optimizelegibility; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 		{ font-weight:inherit; }
+h1, .h1 									{ margin-bottom: 0.25em; font-size: 28px; font-size: 2.8rem; line-height: 1.2; }
+h2, .h2 									{ margin-bottom: 0.25em; font-size: 22px; font-size: 2.2rem; line-height: 1.2; }
+h3, .h3 									{ margin-bottom: 0.25em; font-size: 19px; font-size: 1.9rem; line-height: 1.3; }
+h4, .h4 									{ margin-bottom: 1.0em; font-size: 16px; font-size: 1.6rem; line-height: 1.25; }
+h5, .h5 									{ margin-bottom: 1.0em; font-size: 14px; font-size: 1.4rem; }
+h6, .h6 									{ margin-bottom: 1.5em; font-size: 14px; font-size: 1.4rem; font-weight: normal; letter-spacing: 1px; text-transform: uppercase; }
+
+p, address 								{ margin-bottom: 1.5em; line-height: 1.5em; }
+table td p 								{ margin-bottom:0; line-height: normal; }
+
+b, strong 								{ font-weight:bold; color:#333; }
+dfn, em 								{ font-style:italic; color:#666; }
+small 									{ font-size: 14px; font-size: 1.4rem; }
+pre, code, kbd, samp 					{ font-family: Monaco, Courier New, monospace; font-size: 14px; font-size: 1.4rem; line-height: 1.5em; }
+pre 										{ white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+sub, sup 								{ position: relative; font-size: 12px; font-size: 1.2rem; line-height: 0; vertical-align: baselineheight; }
+sup 										{ top: -0.5em; }
+sub 										{ bottom: -0.25em; }
+abbr[title] 								{ border-bottom: 1px dotted #c7ced6; cursor: help; }
+ins 										{ background-color: #f3f5f6; color: #000000; text-decoration: none; }
+mark 									{ background-color: #f3f5f6; color: #000000; font-style: italic; font-weight: bold; }
+
+/***** Lists *****/
+.ow_block ul 							{ list-style-type:none; margin:1em 0 1.65em 1em; }
+.ow_block ol 							{ list-style-type:decimal; margin:1em 0 1.65em 1em; }
+.ow_block ul li,
+.ow_block ol li 							{ margin:0 0 0.75em 1em; padding-left:10px; line-height:1.5em; }
+.ow_block ol li ol li 						{ list-style-type:lower-alpha; margin:0.75em 0; padding-left:0.25em; }
+.ow_block ol li ol li ol li 					{ list-style-type:lower-roman; margin:0.75em 0; padding-left:0.25em; }
+.ow_block ul li 							{ list-style-type:disc; padding-left:6px; }
+.ow_block ul li ul li 						{ list-style-type:circle; margin:0.75em 0; padding-left:0.25em; }
+.ow_block ul li ul li ul li 					{ list-style-type:square; margin:0.75em 0; padding-left:0.25em; }
+
+.ow_block dl 							{ margin-bottom: 1.5em; font-size: 14px; font-size: 1.4rem; line-height: 1.5em; }
+.ow_block dd 							{ margin-bottom: 1.5em; }
+.ow_block dt 							{ font-weight: bold; }
+.dl-horizontal dt 						{ float: left; clear: left; width: 20.25%; text-align: right; }
+.dl-horizontal dd 						{ margin-left: 22.78%; }
+
+/***** Links *****/
+a:focus 									{ color: #000000; outline: thin dotted; }
+a:link 									{ color:#d12029; text-decoration:none; outline:0; transition-property:color .1s linear 0s; -moz-transition:color .1s linear 0s; -webkit-transition:color .1s linear 0s; -o-transition:color .1s linear 0s; }
+a:visited 								{ color:#d12029; text-decoration:none; outline:0; }
+a:hover 			 						{ color:#fb0310; text-decoration:underline; outline:0; cursor: pointer;}
+a:active 								{ color:#333; text-decoration:none; outline:0; }
+::-moz-selection 						{ background-color: #d6dbe1; color: #2d353e; text-shadow: none; }
+::selection 								{ background-color: #d6dbe1; color: #2d353e; text-shadow: none; }
+
+/***** Images iFrames & Videos *****/
+img 										{ border:0; -ms-interpolation-mode:bicubic; }
+.max-img 								{ max-width: 100%; height:auto; }		
+.media 									{ position:relative; margin:0 0 15px 0;	padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
+.media iframe,
+.media object, 
+.media embed 							{ position:absolute; top:0; left:0; width:100%; height:100%; }
+/* new image replace technique */
+.ir 										{ /*text-indent: 100%; white-space: nowrap; overflow: hidden;*/ border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+.ir a 									{ text-decoration:none; }
+
+/***** Forms *****/
+#stylized-form							{ margin:10px 0 20px 0; padding:20px; background-color:#f4f4f4; -webkit-border-radius:4px; -moz-border-radius:4px; }
+.wrapper-block 							{ display:block; margin:0; }
+.wrapper-block label 						{ padding:0; display:block; color:#012a35; }
+.wrapper-block select,
+.wrapper-block [type="text"],
+.wrapper-block [type="password"]		{ font-size:14px; font-size:1.4rem; padding:4px; width:198px; border:solid 1px #cfc7c0; margin:2px 0 15px 0px; background-color:#fff; }
+.wrapper-block select					{ width:208px; border-radius:0; -webkit-appearance: none; background:#fff url(select-arrow.png) 98% 0 no-repeat; background-size:14px 28px; }
+.wrapper-block [type="radio"]			{ line-height:16px; margin:0 2px 15px 10px; }
+.wrapper-block [type="checkbox"]		{ width:17px; line-height:16px; margin:0 2px 15px 10px; }
+.wrapper-block textarea					{ font-size:14px; font-size:1.4rem; padding:4px; border:solid 1px #cfc7c0; width:200px; margin:2px 0 15px 0px; }
+.wrapper-block button					{ margin:2px 0 15px 0px; }
+
+.small-label							{ display:block; font-size:10px; font-weight:normal; color:#666; text-align:right; width:140px; }
+
+.wrapper-block .ui-state-default, .wrapper-block .ui-widget-content .ui-state-default, .wrapper-block .ui-widget-header .ui-state-default { width:208px; font-size:14px; font-size:1.4rem; padding:4px; border:solid 1px #cfc7c0; margin:2px 0 15px 0px; background:#fff; border-radius:0; -webkit-appearance: none; }
+
+/***** Global Classes *****/
+.img-left 								{ float:left; margin:0 20px 20px 0; border:none; }
+.img-right 								{ float:right; margin:0 0 20px 20px; border:none; }
+.img-center 								{ display:block; float:none; margin:10px auto; border:none; }
+
+.clear 									{ clear:both; }
+.float-left 								{ float:left; }
+.float-right 							{ float:right; }
+
+.text-big 								{ color:#a2bd30; font-weight:bold; line-height:26px; }
+.text-left 								{ text-align:left; }
+.text-right 								{ text-align:right; }
+.text-center 							{ text-align:center; }
+.text-justify 							{ text-align:justify; }
+
+.normal									{ font-weight:normal; }
+.bold 									{ font-weight:bold; }
+.italic 									{ font-style:italic; }
+.underline 								{ border-bottom:1px solid; }
+.highlight 								{ padding:0 3px 2px; color:#333; font-size:11px; background:#00deff; font-weight:bold; }
+.intro									{ font-size:130%; line-height:130%; }
+
+.nopadding 								{ padding:0; }
+.noindent 								{ margin-left:0; padding-left:0; }
+.nobullet 								{ list-style:none; list-style-image:none; }
+
+.block									{ display:block; }
+.hidden									{ display:none; }
+.hide 									{ display:none; }
+
+
+/***** Screen 960px 
+not responsvie, so adding grid css here
+*****/
+.row 								{ margin:0 auto; width:960px; /*overflow:hidden;*/ }
+.row .row 							{ margin:0 -16px 0 -16px; width:auto; display:inline-block; }
+
+.grid_1 							{ width:48px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_2 							{ width:128px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_3 							{ width:208px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_4 							{ width:288px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_5 							{ width:368px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_6 							{ width:448px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_7 							{ width:528px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_8 							{ width:608px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_9 							{ width:688px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_10 							{ width:768px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_11 							{ width:848px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+.grid_12 							{ width:928px; margin:0 16px 0 16px; overflow:hidden; float:left; display:inline; }
+
+.offset_1 							{ margin-left:96px; }
+.offset_2 							{ margin-left:176px; }
+.offset_3 							{ margin-left:256px; }
+.offset_4 							{ margin-left:336px; }
+.offset_5 							{ margin-left:416px; }
+.offset_6 							{ margin-left:496px; }
+.offset_7 							{ margin-left:576px; }
+.offset_8 							{ margin-left:656px; }
+.offset_9 							{ margin-left:736px; }
+.offset_10 							{ margin-left:816px; }
+.offset_11 							{ margin-left:896px; }
+
+/***** Clean up *****/
+
+.container:after 					{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after 							{ content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.row:after, .clearfix:after 		{ clear:both; }
+.row, 
+.clearfix 							{ zoom:1; }
+.clear 								{ clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }

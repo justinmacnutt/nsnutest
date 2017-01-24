@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="nsnu_membership" Class="NsnuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CORUSCANT64\COR2008;Initial Catalog=nsnu_membership;Integrated Security=True" SettingsObjectName="Nsnu.DataAccess.Properties.Settings" SettingsPropertyName="nsnu_membershipConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="addressTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="line1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="line2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="provinceId" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="postalCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Address_FacilityAddress" Member="FacilityAddresses" ThisKey="id" OtherKey="addressId" Type="FacilityAddress" />
+      <Association Name="Address_NurseAddress" Member="NurseAddresses" ThisKey="id" OtherKey="addressId" Type="NurseAddress" />
+      <Association Name="refAddressType_Address" Member="refAddressType" ThisKey="addressTypeId" OtherKey="id" Type="refAddressType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FacilityTableOfficer" Member="FacilityTableOfficers">
+    <Type Name="FacilityTableOfficer">
+      <Column Name="facilityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="NurseFacility_FacilityTableOfficer" Member="NurseFacility" ThisKey="nurseId,facilityId" OtherKey="nurseId,facilityId" Type="NurseFacility" IsForeignKey="true" />
+      <Association Name="refTableOfficerPosition_FacilityTableOfficer" Member="refTableOfficerPosition" ThisKey="positionId" OtherKey="id" Type="refTableOfficerPosition" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Committee" Member="Committees">
+    <Type Name="Committee">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="committeeName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Committee_CommitteePosition" Member="CommitteePositions" ThisKey="id" OtherKey="committeeId" Type="CommitteePosition" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CommitteePosition" Member="CommitteePositions">
+    <Type Name="CommitteePosition">
+      <Column Name="committeeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maxPositions" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="maxAlternates" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CommitteePosition_NurseCommittee" Member="NurseCommittees" ThisKey="committeeId,positionId" OtherKey="committeeId,positionId" Type="NurseCommittee" />
+      <Association Name="Committee_CommitteePosition" Member="Committee" ThisKey="committeeId" OtherKey="id" Type="Committee" IsForeignKey="true" />
+      <Association Name="refCommitteePosition_CommitteePosition" Member="refCommitteePosition" ThisKey="positionId" OtherKey="id" Type="refCommitteePosition" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.District" Member="Districts">
+    <Type Name="District">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="districtName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="regionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="District_Facility" Member="Facilities" ThisKey="id" OtherKey="districtId" Type="Facility" />
+      <Association Name="Region_District" Member="Region" ThisKey="regionId" OtherKey="id" Type="Region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FacilityAddress" Member="FacilityAddresses">
+    <Type Name="FacilityAddress">
+      <Column Name="facilityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Address_FacilityAddress" Member="Address" ThisKey="addressId" OtherKey="id" Type="Address" IsForeignKey="true" />
+      <Association Name="Facility_FacilityAddress" Member="Facility" ThisKey="facilityId" OtherKey="id" Type="Facility" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FacilityLocalPosition" Member="FacilityLocalPositions">
+    <Type Name="FacilityLocalPosition">
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="facilityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="NurseFacility_FacilityLocalPosition" Member="NurseFacility" ThisKey="nurseId,facilityId" OtherKey="nurseId,facilityId" Type="NurseFacility" IsForeignKey="true" />
+      <Association Name="refLocalPosition_FacilityLocalPosition" Member="refLocalPosition" ThisKey="positionId" OtherKey="id" Type="refLocalPosition" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FacilityPhone" Member="FacilityPhones">
+    <Type Name="FacilityPhone">
+      <Column Name="facilityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="phoneId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Phone_FacilityPhone" Member="Phone" ThisKey="phoneId" OtherKey="id" Type="Phone" IsForeignKey="true" />
+      <Association Name="Facility_FacilityPhone" Member="Facility" ThisKey="facilityId" OtherKey="id" Type="Facility" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabourRepresentative" Member="LabourRepresentatives">
+    <Type Name="LabourRepresentative">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="LabourRepresentative_Facility" Member="Facilities" ThisKey="id" OtherKey="labourRepId" Type="Facility" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Note" Member="Notes">
+    <Type Name="Note">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="noteBody" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="creationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createdBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Nurse_Note" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NurseAddress" Member="NurseAddresses">
+    <Type Name="NurseAddress">
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Address_NurseAddress" Member="Address" ThisKey="addressId" OtherKey="id" Type="Address" IsForeignKey="true" />
+      <Association Name="Nurse_NurseAddress" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NurseFacility" Member="NurseFacilities">
+    <Type Name="NurseFacility">
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="facilityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="employmentTypeId" Type="System.Byte" DbType="TinyInt NULL" CanBeNull="true" />
+      <Column Name="priority" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="NurseFacility_FacilityTableOfficer" Member="FacilityTableOfficers" ThisKey="nurseId,facilityId" OtherKey="nurseId,facilityId" Type="FacilityTableOfficer" />
+      <Association Name="NurseFacility_FacilityLocalPosition" Member="FacilityLocalPositions" ThisKey="nurseId,facilityId" OtherKey="nurseId,facilityId" Type="FacilityLocalPosition" />
+      <Association Name="refEmploymentType_NurseFacility" Member="refEmploymentType" ThisKey="employmentTypeId" OtherKey="id" Type="refEmploymentType" IsForeignKey="true" />
+      <Association Name="Nurse_NurseFacility" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+      <Association Name="Facility_NurseFacility" Member="Facility" ThisKey="facilityId" OtherKey="id" Type="Facility" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NurseOptOut" Member="NurseOptOuts">
+    <Type Name="NurseOptOut">
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="optOutId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="refOptOut_NurseOptOut" Member="refOptOut" ThisKey="optOutId" OtherKey="id" Type="refOptOut" IsForeignKey="true" />
+      <Association Name="Nurse_NurseOptOut" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NursePhone" Member="NursePhones">
+    <Type Name="NursePhone">
+      <Column Name="userId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="phoneId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Phone_NursePhone" Member="Phone" ThisKey="phoneId" OtherKey="id" Type="Phone" IsForeignKey="true" />
+      <Association Name="Nurse_NursePhone" Member="Nurse" ThisKey="userId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refAddressType" Member="refAddressTypes">
+    <Type Name="refAddressType">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressTypeName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="refAddressType_Address" Member="Addresses" ThisKey="id" OtherKey="addressTypeId" Type="Address" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refCommitteePosition" Member="refCommitteePositions">
+    <Type Name="refCommitteePosition">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="refCommitteePosition_CommitteePosition" Member="CommitteePositions" ThisKey="id" OtherKey="positionId" Type="CommitteePosition" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refEmployerGroup" Member="refEmployerGroups">
+    <Type Name="refEmployerGroup">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="employerGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refEmployerGroup_Facility" Member="Facilities" ThisKey="id" OtherKey="employerGroupId" Type="Facility" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refEmploymentStatus" Member="refEmploymentStatus">
+    <Type Name="refEmploymentStatus">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="employmentStatusName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refEmploymentStatus_Nurse" Member="Nurses" ThisKey="id" OtherKey="employmentStatusId" Type="Nurse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refEmploymentType" Member="refEmploymentTypes">
+    <Type Name="refEmploymentType">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="employmentTypeName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refEmploymentType_NurseFacility" Member="NurseFacilities" ThisKey="id" OtherKey="employmentTypeId" Type="NurseFacility" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refFacilityType" Member="refFacilityTypes">
+    <Type Name="refFacilityType">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="facilityTypeName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refFacilityType_Facility" Member="Facilities" ThisKey="id" OtherKey="facilityTypeId" Type="Facility" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refGender" Member="refGenders">
+    <Type Name="refGender">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="genderName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="refGender_Nurse" Member="Nurses" ThisKey="id" OtherKey="genderId" Type="Nurse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refLocalPosition" Member="refLocalPositions">
+    <Type Name="refLocalPosition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="refLocalPosition_FacilityLocalPosition" Member="FacilityLocalPositions" ThisKey="id" OtherKey="positionId" Type="FacilityLocalPosition" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refNurseDesignation" Member="refNurseDesignations">
+    <Type Name="refNurseDesignation">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nurseDesignationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refNurseDesignation_Nurse" Member="Nurses" ThisKey="id" OtherKey="nurseDesignationId" Type="Nurse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refOptOut" Member="refOptOuts">
+    <Type Name="refOptOut">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="optOutName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refOptOut_NurseOptOut" Member="NurseOptOuts" ThisKey="id" OtherKey="optOutId" Type="NurseOptOut" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refPhoneType" Member="refPhoneTypes">
+    <Type Name="refPhoneType">
+      <Column Name="id" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="phoneTypeName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="refPhoneType_Phone" Member="Phones" ThisKey="id" OtherKey="phoneTypeId" Type="Phone" />
+    </Type>
+  </Table>
+  <Table Name="dbo.refTableOfficerPosition" Member="refTableOfficerPositions">
+    <Type Name="refTableOfficerPosition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="refTableOfficerPosition_FacilityTableOfficer" Member="FacilityTableOfficers" ThisKey="id" OtherKey="positionId" Type="FacilityTableOfficer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Region" Member="Regions">
+    <Type Name="Region">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="regionName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="Region_District" Member="Districts" ThisKey="id" OtherKey="regionId" Type="District" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfile" Member="UserProfiles">
+    <Type Name="UserProfile">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="creationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="secondaryemail" Type="System.String" DbType="varchar(50)" CanBeNull="true" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="profileId" Type="UserProfileRole" />
+      <Association Name="UserProfile_Nurse" Member="Nurse" ThisKey="id" OtherKey="userId" Type="Nurse" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProfileRole" Member="UserProfileRoles">
+    <Type Name="UserProfileRole">
+      <Column Name="profileId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="roleId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UserProfile_UserProfileRole" Member="UserProfile" ThisKey="profileId" OtherKey="id" Type="UserProfile" IsForeignKey="true" />
+      <Association Name="UserRole_UserProfileRole" Member="UserRole" ThisKey="roleId" OtherKey="id" Type="UserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="roleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserRole_UserProfileRole" Member="UserProfileRoles" ThisKey="id" OtherKey="roleId" Type="UserProfileRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VersionHistory" Member="VersionHistories">
+    <Type Name="VersionHistory">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="modifiedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="modificationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="versionXml" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Nurse_VersionHistory" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Phone" Member="Phones">
+    <Type Name="Phone">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phoneTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="extension" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Phone_FacilityPhone" Member="FacilityPhones" ThisKey="id" OtherKey="phoneId" Type="FacilityPhone" />
+      <Association Name="Phone_NursePhone" Member="NursePhones" ThisKey="id" OtherKey="phoneId" Type="NursePhone" />
+      <Association Name="refPhoneType_Phone" Member="refPhoneType" ThisKey="phoneTypeId" OtherKey="id" Type="refPhoneType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NurseCommittee" Member="NurseCommittees">
+    <Type Name="NurseCommittee">
+      <Column Name="nurseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="committeeId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="positionId" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="isAlternate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="regionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="districtId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CommitteePosition_NurseCommittee" Member="CommitteePosition" ThisKey="committeeId,positionId" OtherKey="committeeId,positionId" Type="CommitteePosition" IsForeignKey="true" />
+      <Association Name="Nurse_NurseCommittee" Member="Nurse" ThisKey="nurseId" OtherKey="userId" Type="Nurse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nurse" Member="Nurses">
+    <Type Name="Nurse">
+      <Column Name="userId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="initial" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="genderId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="nickname" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nurseDesignationId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="employmentStatusId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="issuedMembershipCard" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="completedMembershipForm" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lastModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Nurse_Note" Member="Notes" ThisKey="userId" OtherKey="nurseId" Type="Note" />
+      <Association Name="Nurse_NurseAddress" Member="NurseAddresses" ThisKey="userId" OtherKey="nurseId" Type="NurseAddress" />
+      <Association Name="Nurse_NurseFacility" Member="NurseFacilities" ThisKey="userId" OtherKey="nurseId" Type="NurseFacility" />
+      <Association Name="Nurse_NurseOptOut" Member="NurseOptOuts" ThisKey="userId" OtherKey="nurseId" Type="NurseOptOut" />
+      <Association Name="Nurse_NursePhone" Member="NursePhones" ThisKey="userId" OtherKey="userId" Type="NursePhone" />
+      <Association Name="Nurse_VersionHistory" Member="VersionHistories" ThisKey="userId" OtherKey="nurseId" Type="VersionHistory" />
+      <Association Name="Nurse_NurseCommittee" Member="NurseCommittees" ThisKey="userId" OtherKey="nurseId" Type="NurseCommittee" />
+      <Association Name="refEmploymentStatus_Nurse" Member="refEmploymentStatus" ThisKey="employmentStatusId" OtherKey="id" Type="refEmploymentStatus" IsForeignKey="true" />
+      <Association Name="refGender_Nurse" Member="refGender" ThisKey="genderId" OtherKey="id" Type="refGender" IsForeignKey="true" />
+      <Association Name="refNurseDesignation_Nurse" Member="refNurseDesignation" ThisKey="nurseDesignationId" OtherKey="id" Type="refNurseDesignation" IsForeignKey="true" />
+      <Association Name="UserProfile_Nurse" Member="UserProfile" ThisKey="userId" OtherKey="id" Type="UserProfile" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Facility" Member="Facilities">
+    <Type Name="Facility">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="facilityName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="casualCoverage" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lpnCoverage" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="districtId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="labourRepId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="facilityTypeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="employerGroupId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="Facility_FacilityAddress" Member="FacilityAddresses" ThisKey="id" OtherKey="facilityId" Type="FacilityAddress" />
+      <Association Name="Facility_FacilityPhone" Member="FacilityPhones" ThisKey="id" OtherKey="facilityId" Type="FacilityPhone" />
+      <Association Name="Facility_NurseFacility" Member="NurseFacilities" ThisKey="id" OtherKey="facilityId" Type="NurseFacility" />
+      <Association Name="District_Facility" Member="District" ThisKey="districtId" OtherKey="id" Type="District" IsForeignKey="true" />
+      <Association Name="refEmployerGroup_Facility" Member="refEmployerGroup" ThisKey="employerGroupId" OtherKey="id" Type="refEmployerGroup" IsForeignKey="true" />
+      <Association Name="refFacilityType_Facility" Member="refFacilityType" ThisKey="facilityTypeId" OtherKey="id" Type="refFacilityType" IsForeignKey="true" />
+      <Association Name="LabourRepresentative_Facility" Member="LabourRepresentative" ThisKey="labourRepId" OtherKey="id" Type="LabourRepresentative" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetRolesForUser" Method="GetRolesForUser">
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="GetRolesForUserResult">
+      <Column Name="roleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetFacilitiesForExport" Method="GetFacilitiesForExport">
+    <ElementType Name="GetFacilitiesForExportResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="facilityName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="casualCoverage" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="lpnCoverage" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DistrictName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="regionname" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="[Labour Rep]" Member="Labour_Rep" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
+      <Column Name="facilityTypeName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmployerGroupName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="line1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="line2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="provinceid" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="postalCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetFilledCommitteePositions" Method="GetFilledCommitteePositions">
+    <Parameter Name="nurseId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetFilledCommitteePositionsResult">
+      <Column Name="committeeId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="positionId" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="isAlternate" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="regionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="districtId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maxPositions" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="maxAlternates" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="currentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SearchUserProfiles" Method="SearchUserProfiles">
+    <Parameter Name="username" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="firstName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="lastName" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="designationId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="sectorId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="facilityId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="districtId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="regionId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="committeeId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="positionId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="communicationOptionId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="employerGroupId" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="facilityCasualCoverage" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="facilityLpnCoverage" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="letterFilter" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="isAlternate" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="line1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="employmentStatusList" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="localPositionList" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="tableOfficerPositionList" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="SearchUserProfilesResult">
+      <Column Name="userId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="initial" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="nickname" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="genderId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="secondaryemail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nurseDesignationId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="employmentStatusId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="primaryFacility" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="line1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="line2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="provinceId" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="postalCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="primaryEmploymentTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

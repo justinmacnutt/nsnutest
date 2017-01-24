@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="WebApplication.Nsnu" Codebehind="nsnu.master.cs" %>
+<%@ Register TagPrefix="uc" TagName="AuthWidget" Src="~/UserControls/AuthWidget.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Nova Scotia Nurses Union</title>
+    <link href="Styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/nsnu.css" rel="stylesheet" type="text/css" /> 
+    <link href="Styles/jquery-ui.custom.css" rel="stylesheet" type="text/css" /> 
+
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery-1.9.1.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery-ui-1.10.3.custom.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/jquery.multiselect.js") %>"></script>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+		#header, .btn {
+		   filter: none;
+		}
+	  </style>
+	<![endif]-->
+    <asp:ContentPlaceHolder id="cphHeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="container" class="inside cols_1">
+	        <div id="header" role="banner" class="clearfix">
+	
+		        <div class="masthead">
+			        <div class="row clearfix">
+				        <div class="grid_12">
+					        <h1 class="branding ir"><a href="index.aspx">Nova Scotia Nurses Union</a></h1>
+					    
+                            <div class="task-nav">
+                                <uc:AuthWidget runat="server" ID="ucAuthWidget" />
+                            </div>
+					    </div>
+			        </div>
+		        </div>
+	
+	        </div>
+	
+	        <div id="content_wrap" class="content">
+		    
+                <asp:ContentPlaceHolder id="cphMainContent" runat="server"></asp:ContentPlaceHolder>
+
+	        </div>
+	        <!-- / content -->
+	
+	        <div id="footer" role="contentinfo">
+		
+		        <div class="attribution wrapper">	
+			        <div class="row clearfix">
+				        <div class="grid_12">
+					        <p>&copy;Nova Scotia Nurses Union 2013</p>
+						</div>
+			        </div>
+		        </div>
+		
+	        </div>
+        </div>
+
+    </form>
+</body>
+</html>

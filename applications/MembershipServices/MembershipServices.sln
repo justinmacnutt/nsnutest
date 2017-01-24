@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nsnu.DataAccess", "..\..\..\..\..\..\Justin\Projects\Isl\NSNU\MembershipServices\source\MembershipServices\Nsnu.DataAccess\Nsnu.DataAccess.csproj", "{53239258-6196-462D-B800-8891390C73AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nsnu.MembershipServices", "..\..\..\..\..\..\Justin\Projects\Isl\NSNU\MembershipServices\source\MembershipServices\Nsnu.MembershipServices\Nsnu.MembershipServices.csproj", "{EF743B5A-B485-4597-9D14-76492D765A96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "..\..\..\..\..\..\Justin\Projects\Isl\NSNU\MembershipServices\source\MembershipServices\WebApplication\WebApplication.csproj", "{F2C96640-F8D5-4749-9A89-56CDB8DB2299}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tatooine64:8080/tfs/projectcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\Nsnu.DataAccess\\Nsnu.DataAccess.csproj
+		SccProjectName1 = Nsnu.DataAccess
+		SccLocalPath1 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\Nsnu.DataAccess
+		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\Nsnu.MembershipServices\\Nsnu.MembershipServices.csproj
+		SccProjectName2 = Nsnu.MembershipServices
+		SccLocalPath2 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\Nsnu.MembershipServices
+		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\WebApplication\\WebApplication.csproj
+		SccProjectName3 = WebApplication
+		SccLocalPath3 = ..\\..\\..\\..\\..\\..\\Justin\\Projects\\Isl\\NSNU\\MembershipServices\\source\\MembershipServices\\WebApplication
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53239258-6196-462D-B800-8891390C73AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53239258-6196-462D-B800-8891390C73AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53239258-6196-462D-B800-8891390C73AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53239258-6196-462D-B800-8891390C73AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF743B5A-B485-4597-9D14-76492D765A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF743B5A-B485-4597-9D14-76492D765A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF743B5A-B485-4597-9D14-76492D765A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF743B5A-B485-4597-9D14-76492D765A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C96640-F8D5-4749-9A89-56CDB8DB2299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C96640-F8D5-4749-9A89-56CDB8DB2299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C96640-F8D5-4749-9A89-56CDB8DB2299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C96640-F8D5-4749-9A89-56CDB8DB2299}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
